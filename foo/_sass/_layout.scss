@@ -3,7 +3,6 @@
  */
 .site-header {
     height: 250px;
-    background-color: $trello-blue;
     border-top: 5px solid $grey-color-dark;
     border-bottom: 5px solid $grey-color-light;
     min-height: 56px;
@@ -170,6 +169,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: $trello-blue;
 }
 
 .page-heading {
