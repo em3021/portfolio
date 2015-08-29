@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-    height: 250px;
-    border-top: 5px solid $grey-color-dark;
+    height: 200px;
+    border-top: 5px solid $grey-color;
     border-bottom: 5px solid $grey-color-light;
     min-height: 56px;
 
@@ -12,8 +12,7 @@
 }
 
 .site-title {
-    border: 1px solid #424242;
-    background-color: #424242;
+    background-color: $grey-color;
     color: white;
     padding: 10px;
     font-size: 26px;
@@ -28,14 +27,21 @@
 }
 
 .site-nav {
-    float: right;
+    position: relative;
+    top: 220px;
+
+    .trigger a {
+            border: 2px solid white;
+            padding: 2px 5px 2px 5px;
+            border-radius: 2px;
+    }
 
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: $text-color;
+        color: white;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -99,6 +105,7 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
+    border-bottom: 10px solid $trello-blue;
     padding: $spacing-unit 0;
 }
 
@@ -170,6 +177,8 @@
 .page-content {
     padding: $spacing-unit 0;
     background-color: $trello-blue;
+    color: white;
+    height: 2000px;
 }
 
 .page-heading {
