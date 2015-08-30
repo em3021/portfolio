@@ -10,4 +10,7 @@ permalink: /design/
 .site-footer {
     border-bottom: 10px solid green;
  }
+ .post-title {
+	color: green;
+}
 </style>

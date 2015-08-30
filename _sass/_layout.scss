@@ -4,7 +4,6 @@
 .site-header {
     height: 200px;
     border-top: 5px solid $grey-color;
-    border-bottom: 5px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -32,8 +31,8 @@
 
     .trigger a {
             border: 2px solid white;
-            padding: 2px 5px 2px 5px;
-            border-radius: 2px;
+            padding: 5px;
+            border-radius: 1px;
     }
 
     .menu-icon {
@@ -49,6 +48,7 @@
             margin-left: 20px;
         }
     }
+
 
     @include media-query($on-palm) {
         position: absolute;
@@ -89,12 +89,14 @@
         &:hover .trigger {
             display: block;
             padding-bottom: 5px;
+            
         }
 
         .page-link {
             display: block;
             padding: 5px 10px;
         }
+
     }
 }
 
@@ -185,6 +187,10 @@
     font-size: 20px;
 }
 
+.post {
+    margin-top: 100px;
+}
+
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -210,6 +216,7 @@
  * Posts
  */
 .post-header {
+    border-top: 5px solid white;
     margin-bottom: $spacing-unit;
 }
 
@@ -217,6 +224,10 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    padding: 10px 0 10px 10px;
+    background-color: white;
+    width: 150px;
+
 
     @include media-query($on-laptop) {
         font-size: 36px;

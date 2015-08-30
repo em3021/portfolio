@@ -151,7 +151,6 @@ pre {
 .site-header {
   height: 200px;
   border-top: 5px solid #424242;
-  border-bottom: 5px solid #a8a8a8;
   min-height: 56px;
   position: relative; }
 
@@ -171,8 +170,8 @@ pre {
   top: 220px; }
   .site-nav .trigger a {
     border: 2px solid white;
-    padding: 2px 5px 2px 5px;
-    border-radius: 2px; }
+    padding: 5px;
+    border-radius: 1px; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
@@ -280,6 +279,9 @@ pre {
 .page-heading {
   font-size: 20px; }
 
+.post {
+  margin-top: 100px; }
+
 .post-list {
   margin-left: 0;
   list-style: none; }
@@ -298,12 +300,16 @@ pre {
  * Posts
  */
 .post-header {
+  border-top: 5px solid white;
   margin-bottom: 30px; }
 
 .post-title {
   font-size: 42px;
   letter-spacing: -1px;
-  line-height: 1; }
+  line-height: 1;
+  padding: 10px 0 10px 10px;
+  background-color: white;
+  width: 150px; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }

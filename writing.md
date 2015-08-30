@@ -11,4 +11,8 @@ permalink: /writing/
 .site-footer {
     border-bottom: 10px solid orange;
  }
+
+ .post-title {
+	color: orange;
+}
 </style>

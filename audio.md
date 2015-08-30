@@ -10,6 +10,9 @@ permalink: /audio/
 .site-footer {
     border-bottom: 10px solid #e73640;
  }
+ .post-title {
+	color: #e73640;
+}
 </style>
 
 <div class="section">
