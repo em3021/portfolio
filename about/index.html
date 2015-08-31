@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+categories: about
 ---
 
 <style type="text/css">
@@ -11,6 +12,19 @@ permalink: /about/
 }
 
 </style>
+
+<ul class="post-list">
+    {% for post in site.posts %}
+     	{% if site.category %}
+      <li>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
