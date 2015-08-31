@@ -7,13 +7,11 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: martinez_emily
 github_username:  em3021
-defaults:
-  -
-    scope:
-      path: "writing"
-    values:
-      layout: "post"
 
+collections: 
+writing:
+output: true
+permalink: /writing/:path/
 
 # Build settings
 markdown: kramdown

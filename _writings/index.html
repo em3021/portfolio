@@ -1,0 +1,32 @@
+---
+layout: page
+title: Writing
+permalink: /writing/
+---
+
+<style type="text/css">
+.page-content {
+	background-color: orange;
+}
+.site-footer {
+    border-bottom: 10px solid orange;
+ }
+
+ .post-title {
+	color: orange;
+}
+</style>
+
+<div>
+
+  <ul class="post-list">
+    {% for post in site.writings %}
+      <li>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ writing.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
