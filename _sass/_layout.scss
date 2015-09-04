@@ -3,7 +3,7 @@
  */
 .site-header {
     height: 200px;
-    border-top: 5px solid $grey-color;
+    border-top: 0 solid $grey-color;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -106,7 +106,6 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     border-bottom: 10px solid $trello-blue;
     padding: $spacing-unit 0;
 }
@@ -180,7 +179,7 @@
     padding: $spacing-unit 0;
     background-color: $trello-blue;
     color: white;
-    height: 2000px;
+    height: 1000px;
 }
 
 .page-heading {
@@ -189,6 +188,10 @@
 
 .post {
     margin-top: 100px;
+}
+
+.post p {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .post-list {
@@ -216,17 +219,16 @@
  * Posts
  */
 .post-header {
-    border-top: 5px solid white;
     margin-bottom: $spacing-unit;
 }
 
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;
+    font-weight: 300;
     line-height: 1;
-    padding: 10px 0 10px 10px;
+    padding: 5px 20px 5px 20px;
     background-color: white;
-    width: 150px;
 
 
     @include media-query($on-laptop) {
