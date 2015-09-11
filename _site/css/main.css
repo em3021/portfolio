@@ -171,7 +171,8 @@ pre {
   .site-nav .trigger a {
     border: 2px solid white;
     padding: 5px;
-    border-radius: 1px; }
+    border-radius: 1px;
+    transition: background-color .25s ease-in; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {

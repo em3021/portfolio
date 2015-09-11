@@ -54,15 +54,10 @@ $on-laptop:        800px;
 ;
 
 
-.site-nav .trigger a {
-
-	&:hover {
+.site-nav .trigger a:hover {
         color: $text-color;
         text-decoration: underline;
         background-color: white;
-
-    }
-
 }
 
 
