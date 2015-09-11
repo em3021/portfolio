@@ -5,4 +5,6 @@ group :jekyll_plugins do
   gem "jekyll-assets-autoprefixer"
 end
 
+gem 'github-pages'
+
 # gem "rails"
