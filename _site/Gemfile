@@ -1,0 +1,9 @@
+# A sample Gemfile
+source "https://rubygems.org"
+
+gem 'jekyll', '~> 2.5.3'
+gem 'bourbon', '~> 4.2.0'
+gem 'sass', '~> 3.4.14'
+gem 'mini_magick', '~> 4.0.0'
+
+# gem "rails"
