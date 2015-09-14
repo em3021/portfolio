@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="post">
+
+
+
+  <header class="post-header">
+    <span class="post-title">{{ page.title }}</span>	    
+    {% if page.style %}
+ <style type="text/css">
+     {{ page.style }}
+ </style>
+{% endif %}
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>
