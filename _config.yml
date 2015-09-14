@@ -3,8 +3,8 @@ title: Emily Martinez
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   This site was built with Jekyll. 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog/
+url: "http://em3021.github.io" # the base hostname & protocol for your site
 twitter_username: martinez_emily
 github_username:  em3021
 collections:
