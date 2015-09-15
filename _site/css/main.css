@@ -219,7 +219,8 @@ pre {
  * Site footer
  */
 .site-footer {
-  padding: 30px 0; }
+  padding: 30px 0;
+  border-bottom: 10px solid #E1565E; }
 
 .footer-heading {
   font-size: 18px;
@@ -271,7 +272,7 @@ pre {
  */
 .page-content {
   padding: 30px 0;
-  background-color: #36011D;
+  background-color: #E1565E;
   color: white;
   height: 1000px; }
 
@@ -309,8 +310,7 @@ pre {
   letter-spacing: -1px;
   font-weight: 300;
   line-height: 1;
-  padding: 5px 20px 5px 20px;
-  background-color: white; }
+  border-top: 3px solid white; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
@@ -476,6 +476,3 @@ pre {
   color: #111;
   text-decoration: underline;
   background-color: white; }
-
-.post-title {
-  color: #36011D; }
