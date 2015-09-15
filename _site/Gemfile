@@ -1,9 +1,19 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> gh-pages
 group :jekyll_plugins do
   gem "jekyll-assets-autoprefixer"
 end
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> gh-pages
 # gem "rails"
