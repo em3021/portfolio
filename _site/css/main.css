@@ -219,7 +219,6 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-bottom: 10px solid #36011D;
   padding: 30px 0; }
 
 .footer-heading {
@@ -477,3 +476,6 @@ pre {
   color: #111;
   text-decoration: underline;
   background-color: white; }
+
+.post-title {
+  color: #36011D; }

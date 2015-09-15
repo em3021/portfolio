@@ -15,7 +15,7 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #424242;
+$grey-color:       #424242; 
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 $trello-blue: #0079bf;
@@ -63,6 +63,10 @@ $on-laptop:        800px;
         background-color: white;
 }
 
+.post-title {
+	color: $dark-red;
+	border-bottom: 10px solid $dark-red;
+}
 
 
 
