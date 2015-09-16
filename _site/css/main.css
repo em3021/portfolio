@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #111;
-  background-color: #fdfdfd;
+  background-color: #F2EBEA;
   -webkit-text-size-adjust: 100%; }
 
 .section {
@@ -79,8 +79,8 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: #424242;
-  border-left: 4px solid #a8a8a8;
+  color: #33262C;
+  border-left: 4px solid #a28391;
   padding-left: 15px;
   font-size: 18px;
   letter-spacing: -1px;
@@ -94,7 +94,7 @@ blockquote {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid #a8a8a8;
+  border: 1px solid #a28391;
   border-radius: 3px;
   background-color: #eef; }
 
@@ -143,19 +143,19 @@ pre {
   height: 16px;
   vertical-align: middle; }
   .icon > svg path {
-    fill: #424242; }
+    fill: #33262C; }
 
 /**
  * Site header
  */
 .site-header {
   height: 200px;
-  border-top: 0 solid #424242;
+  border-top: 0 solid #33262C;
   min-height: 56px;
   position: relative; }
 
 .site-title {
-  background-color: #424242;
+  background-color: #33262C;
   color: white;
   padding: 10px;
   font-size: 26px;
@@ -185,8 +185,8 @@ pre {
       position: absolute;
       top: 9px;
       right: 30px;
-      background-color: #fdfdfd;
-      border: 1px solid #a8a8a8;
+      background-color: #F2EBEA;
+      border: 1px solid #a28391;
       border-radius: 5px;
       text-align: right; }
       .site-nav .menu-icon {
@@ -201,7 +201,7 @@ pre {
           width: 18px;
           height: 15px; }
           .site-nav .menu-icon > svg path {
-            fill: #020202; }
+            fill: black; }
       .site-nav .trigger {
         border: 1px solid #bf4600;
         padding: 5px;
@@ -219,17 +219,8 @@ pre {
  * Site footer
  */
 .site-footer {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  border-bottom: 10px solid #192236;
-=======
-  border-bottom: 10px solid #36011D;
->>>>>>> gh-pages
-  padding: 30px 0; }
-=======
   padding: 30px 0;
   border-bottom: 10px solid #E1565E; }
->>>>>>> 8c912a237b684e76011a34dd08ae5246d3c31cd0
 
 .footer-heading {
   font-size: 18px;
@@ -242,7 +233,7 @@ pre {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #424242;
+  color: #33262C;
   margin-left: -15px; }
 
 .footer-col {
@@ -281,17 +272,8 @@ pre {
  */
 .page-content {
   padding: 30px 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  background-color: #192236;
-=======
-  background-color: #36011D;
->>>>>>> gh-pages
-=======
   background-color: #E1565E;
->>>>>>> 8c912a237b684e76011a34dd08ae5246d3c31cd0
-  color: white;
-  height: 1000px; }
+  color: white; }
 
 .page-heading {
   font-size: 20px; }
@@ -310,7 +292,7 @@ pre {
 
 .post-meta {
   font-size: 14px;
-  color: #424242; }
+  color: #33262C; }
 
 .post-link {
   display: block;
