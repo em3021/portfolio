@@ -107,8 +107,8 @@
  * Site footer
  */
 .site-footer {
-    border-bottom: 10px solid $dark-red;
     padding: $spacing-unit 0;
+    border-bottom: 10px solid $pink;
 }
 
 .footer-heading {
@@ -178,7 +178,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    background-color: $dark-red;
+    background-color: $pink;
     color: white;
     height: 1000px;
 }
@@ -228,8 +228,7 @@
     letter-spacing: -1px;
     font-weight: 300;
     line-height: 1;
-    padding: 5px 20px 5px 20px;
-    background-color: white;
+    border-top: 3px solid white;
 
 
     @include media-query($on-laptop) {

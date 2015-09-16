@@ -220,11 +220,16 @@ pre {
  */
 .site-footer {
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-bottom: 10px solid #192236;
 =======
   border-bottom: 10px solid #36011D;
 >>>>>>> gh-pages
   padding: 30px 0; }
+=======
+  padding: 30px 0;
+  border-bottom: 10px solid #E1565E; }
+>>>>>>> 8c912a237b684e76011a34dd08ae5246d3c31cd0
 
 .footer-heading {
   font-size: 18px;
@@ -277,10 +282,14 @@ pre {
 .page-content {
   padding: 30px 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #192236;
 =======
   background-color: #36011D;
 >>>>>>> gh-pages
+=======
+  background-color: #E1565E;
+>>>>>>> 8c912a237b684e76011a34dd08ae5246d3c31cd0
   color: white;
   height: 1000px; }
 
@@ -318,8 +327,7 @@ pre {
   letter-spacing: -1px;
   font-weight: 300;
   line-height: 1;
-  padding: 5px 20px 5px 20px;
-  background-color: white; }
+  border-top: 3px solid white; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
