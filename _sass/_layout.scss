@@ -36,10 +36,10 @@
             transition: all .25s ease-in-out;
     }
 
-    .menu-icon {
+    /*.menu-icon {
         display: none;
     }
-
+*/
     .page-link {
         color: white;
         line-height: $base-line-height;
@@ -52,15 +52,9 @@
 
 
     @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
+        position: relative;
+        top: 160px;
+        /*.menu-icon {
             display: block;
             float: right;
             width: 36px;
@@ -77,24 +71,23 @@
                     fill: $grey-color-dark;
                 }
             }
-        }
+        }*/
 
         .trigger {
-            border: 1px solid #bf4600;
-            padding: 5px;
-            border-radius: 5px;
-            clear: both;
-            display: none;
+            float: left;
+        }
+
+        .trigger a {
+            border: none;
         }
 
         &:hover .trigger {
             display: block;
             padding-bottom: 5px;
-            
-        }
+       }
 
         .page-link {
-            display: block;
+            display: inline;
             padding: 5px 10px;
         }
 

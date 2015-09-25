@@ -65,7 +65,9 @@ $on-laptop:        800px;
 }
 
 
-
+@include media-query($on-palm) {
+	
+}
 
 
 
