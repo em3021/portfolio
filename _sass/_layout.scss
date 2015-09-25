@@ -109,6 +109,7 @@
 .site-footer {
     padding: $spacing-unit 0;
     border-bottom: 10px solid $pink;
+    height: 144px;
 }
 
 .footer-heading {
@@ -180,6 +181,13 @@
     padding: $spacing-unit 0;
     background-color: $pink;
     color: white;
+    min-height: 100%;
+}
+
+.page-content:after {
+    content: "";
+  display: block;
+  height: 144px;
 }
 
 .page-heading {
