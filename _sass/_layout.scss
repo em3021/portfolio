@@ -193,6 +193,10 @@
     padding: 50px 80px;
     border: 1px solid #ccc;
     box-shadow: 20px 20px 70px -20px;
+    @include media-query($on-palm) {
+            padding: 50px 30px;
+            box-shadow: 15px 15px 50px -20px;
+        }
 }
 
 .post p {
@@ -238,6 +242,7 @@
     @include media-query($on-laptop) {
         font-size: 36px;
     }
+        
 }
 
 .post-content {
