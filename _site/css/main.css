@@ -161,6 +161,9 @@ pre {
   border-top: 0 solid #33262C;
   min-height: 56px;
   position: relative; }
+  @media screen and (max-width: 600px) {
+    .site-header {
+      height: 130px; } }
 
 .site-title {
   background-color: #111;
@@ -193,7 +196,7 @@ pre {
   @media screen and (max-width: 600px) {
     .site-nav {
       position: relative;
-      top: 160px;
+      top: 90px;
         /*.menu-icon {
             display: block;
             float: right;
@@ -298,10 +301,11 @@ pre {
   background-color: white;
   padding: 60px;
   border: 1px solid #ccc;
-  box-shadow: 20px 20px 70px -20px; }
+  box-shadow: 20px 20px 70px -20px #111; }
   @media screen and (max-width: 600px) {
     .post {
-      padding: 50px 25px;
+      margin: 80px auto;
+      padding: 40px 20px;
       box-shadow: 15px 15px 50px -20px; } }
 
 .post p {
@@ -320,6 +324,9 @@ pre {
 .post-link {
   display: block;
   font-size: 24px; }
+  @media screen and (max-width: 600px) {
+    .post-link {
+      font-size: 20px; } }
 
 /**
  * Posts

@@ -5,6 +5,9 @@
     height: 180px;
     border-top: 0 solid $grey-color;
     min-height: 56px;
+    @include media-query($on-palm) {
+        height: 130px;
+    }
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -53,7 +56,7 @@
 
     @include media-query($on-palm) {
         position: relative;
-        top: 160px;
+        top: 90px;
         /*.menu-icon {
             display: block;
             float: right;
@@ -194,6 +197,7 @@
     border: 1px solid #ccc;
     box-shadow: 20px 20px 70px -20px #111;
     @include media-query($on-palm) {
+            margin: 80px auto;
             padding: 40px 20px;
             box-shadow: 15px 15px 50px -20px;
         }
@@ -220,6 +224,9 @@
 .post-link {
     display: block;
     font-size: 24px;
+    @include media-query($on-palm) {
+        font-size: 20px;
+    }
 }
 
 
