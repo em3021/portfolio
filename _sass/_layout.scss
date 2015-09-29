@@ -194,8 +194,8 @@
     margin: 100px auto;
     background-color: white;
     padding: 60px;
-    border: 1px solid #ccc;
-    box-shadow: 20px 20px 70px -20px #111;
+    border: 1px solid #dddddd;
+    box-shadow: 20px 20px 70px -25px #111;
     @include media-query($on-palm) {
             margin: 70px auto;
             padding: 40px 15px;
@@ -212,7 +212,8 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        border-top: 1px solid #dddddd;
+        padding: 10px;
     }
 }
 
@@ -272,14 +273,16 @@
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 14px;
+        margin-bottom: 0px;
+        color: grey;
 
         @include media-query($on-laptop) {
-            font-size: 18px;
+            
         }
     }
 
     img {
-        border: 1px solid #CCC;
+        border: 1px solid #dddddd;
     }
 }
