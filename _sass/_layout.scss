@@ -197,7 +197,7 @@
     border: 1px solid #ccc;
     box-shadow: 20px 20px 70px -20px #111;
     @include media-query($on-palm) {
-            margin: 80px auto;
+            margin: 50px auto;
             padding: 40px 20px;
             box-shadow: 15px 15px 50px -20px;
         }
