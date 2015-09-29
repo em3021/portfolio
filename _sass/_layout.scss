@@ -11,7 +11,7 @@
 }
 
 .site-title {
-    background-color: $grey-color;
+    background-color: $text-color;
     color: white;
     padding: 10px;
     font-size: 26px;
@@ -190,11 +190,11 @@
 .post {
     margin: 100px auto;
     background-color: white;
-    padding: 50px 80px;
+    padding: 60px;
     border: 1px solid #ccc;
-    box-shadow: 20px 20px 70px -20px;
+    box-shadow: 20px 20px 70px -20px #111;
     @include media-query($on-palm) {
-            padding: 50px 30px;
+            padding: 40px 20px;
             box-shadow: 15px 15px 50px -20px;
         }
 }
