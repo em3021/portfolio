@@ -207,11 +207,11 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.post-list {
+.post-list, .resume {
     margin-left: 0;
     list-style: none;
 
-    > li {
+    .post-list > li {
         border-top: 1px solid #dddddd;
         padding: 10px;
     }
@@ -244,7 +244,7 @@
     letter-spacing: -1px;
     font-weight: 300;
     line-height: 1;
-    border-top: 3px solid $text-color;
+    /*border-top: 3px solid $text-color;*/
 
 
     @include media-query($on-laptop) {

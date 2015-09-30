@@ -311,10 +311,10 @@ pre {
 .post p {
   font-family: 'Source Sans Pro', sans-serif; }
 
-.post-list {
+.post-list, .resume {
   margin-left: 0;
   list-style: none; }
-  .post-list > li {
+  .post-list .post-list > li, .resume .post-list > li {
     border-top: 1px solid #dddddd;
     padding: 10px; }
 
@@ -340,7 +340,7 @@ pre {
   letter-spacing: -1px;
   font-weight: 300;
   line-height: 1;
-  border-top: 3px solid #111; }
+  /*border-top: 3px solid $text-color;*/ }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
@@ -510,3 +510,16 @@ pre {
 
 .ui-page {
   -webkit-backface-visibility: hidden; }
+
+.resume h2 {
+  font-size: 20px;
+  border-top: 1px solid #dddddd;
+  padding: 10px 0; }
+.resume h3 {
+  font-size: 16px;
+  margin-bottom: 5px; }
+.resume h5 {
+  float: right;
+  color: grey; }
+.resume p {
+  margin: 10px; }
