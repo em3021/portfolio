@@ -8,11 +8,18 @@ function initHammertime() {
 
 var myElement = document.getElementById('home');
 
-var hammertime = new Hammer(myElement);
+var swipeOptions = {
+  dragLockToAxis: true,
+  dragBlockHorizontal: true
+};
+
+var hammertime = new Hammer(myElement, swipeOptions);
+
 hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
-hammertime.on('panright swiperight', function(e) {
+
+hammertime.on('panleft swipeleft', function(e) {
 console.log(this);
-window.location = "/portfolio/audio";
+window.location.href = "audio";
 });
 
 }
