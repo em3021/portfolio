@@ -311,10 +311,10 @@ pre {
 .post p {
   font-family: 'Source Sans Pro', sans-serif; }
 
-.post-list, .resume {
+.post-list {
   margin-left: 0;
   list-style: none; }
-  .post-list .post-list > li, .resume .post-list > li {
+  .post-list li {
     border-top: 1px solid #dddddd;
     padding: 10px; }
 
@@ -511,15 +511,18 @@ pre {
 .ui-page {
   -webkit-backface-visibility: hidden; }
 
-.resume h2 {
-  font-size: 20px;
-  border-top: 1px solid #dddddd;
-  padding: 10px 0; }
-.resume h3 {
-  font-size: 16px;
-  margin-bottom: 5px; }
-.resume h5 {
-  float: right;
-  color: grey; }
-.resume p {
-  margin: 10px; }
+.resume {
+  margin-left: 0;
+  list-style: none; }
+  .resume h2 {
+    font-size: 20px;
+    border-top: 1px solid #dddddd;
+    padding: 10px 0; }
+  .resume h3 {
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .resume h5 {
+    float: right;
+    color: grey; }
+  .resume p {
+    margin: 10px; }
