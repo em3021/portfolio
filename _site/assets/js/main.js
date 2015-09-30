@@ -1,16 +1,18 @@
-// $(window).load(function() {
-// initHammertime();
-// });
+$.mobile.autoInitializePage = false;
 
-// function initHammertime() {
+$(window).load(function() {
+initHammertime();
+});
 
-// var myElement = document.body;
+function initHammertime() {
 
-// var hammertime = new Hammer(myElement);
-// hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
-// hammertime.on('panleft panright', function(e) {
+var myElement = document.getElementById('home');
 
-// window.location.assign("http://www.mozilla.org");
-// });
+var hammertime = new Hammer(myElement);
+hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+hammertime.on('panright swiperight', function(e) {
+console.log(this);
+window.location = "/portfolio/audio";
+});
 
-// }
+}

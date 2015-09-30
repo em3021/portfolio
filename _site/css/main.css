@@ -507,3 +507,6 @@ pre {
   color: #111;
   text-decoration: underline;
   background-color: white; }
+
+.ui-page {
+  -webkit-backface-visibility: hidden; }

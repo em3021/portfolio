@@ -11,6 +11,7 @@
 ">
 
   <link rel="stylesheet" href="/portfolio/css/main.css">
+  <link rel="stylesheet" href="/portfolio/css/jquery.mobile.custom.structure.min.css">
   <link rel="canonical" href="http://em3021.github.io/portfolio/design/">
   <link rel="alternate" type="application/rss+xml" title="Emily Martinez" href="http://em3021.github.io/portfolio/feed.xml" />
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
@@ -43,21 +44,21 @@
           
         
           
-          <a class="page-link" href="/portfolio/audio/">Audio</a>
+          <a class="page-link" href="/portfolio/audio/"  data-transition="slide">Audio</a>
           
         
           
-          <a class="page-link" href="/portfolio/resume/">Resume</a>
+          <a class="page-link" href="/portfolio/resume/"  data-transition="slide">Resume</a>
           
         
           
-          <a class="page-link" href="/portfolio/design/">Design</a>
+          <a class="page-link" href="/portfolio/design/"  data-transition="slide">Design</a>
           
         
           
         
           
-          <a class="page-link" href="/portfolio/writing/">Writing</a>
+          <a class="page-link" href="/portfolio/writing/"  data-transition="slide">Writing</a>
           
         
           
@@ -72,9 +73,9 @@
 </header>
 
 
-    <div class="page-content">
+    <div data-role="ui-content" class="page-content">
       <div class="wrapper">
-        <div class="post">
+        <div data-role='page' class="post">
 
 
 
@@ -109,7 +110,7 @@
       </div>
     </div>
 
-    <footer class="site-footer">
+    <footer data-role="footer" class="site-footer">
 
   <div class="wrapper">
 
@@ -165,9 +166,10 @@
 
 
 </footer>
-   <script src="/portfolio/assets/js/lib/jquery-1.11.3.min.js"></script>
+  <script src="/portfolio/assets/js/lib/jquery-1.11.3.min.js"></script>
+  <script src="/portfolio/assets/js/lib/jquery.mobile.custom.min.js"></script>
   <script src="/portfolio/assets/js/lib/jquery.jplayer.js"></script>
-   <script src="/portfolio/assets/js/lib/hammer.min.js"></script>
+  <script src="/portfolio/assets/js/lib/hammer.min.js"></script>
   <script src="/portfolio/assets/js/main.js"></script>
 
   </body>

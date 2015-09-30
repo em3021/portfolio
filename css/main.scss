@@ -63,6 +63,7 @@ $on-laptop:        800px;
         text-decoration: underline;
         background-color: white;
 }
+.ui-page { -webkit-backface-visibility: hidden; }
 
 
 @include media-query($on-palm) {

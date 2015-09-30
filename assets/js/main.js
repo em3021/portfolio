@@ -1,16 +1,18 @@
+$.mobile.autoInitializePage = false;
+
 $(window).load(function() {
 initHammertime();
 });
 
 function initHammertime() {
 
-var myElement = document.body;
+var myElement = document.getElementById('home');
 
 var hammertime = new Hammer(myElement);
 hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
-hammertime.on('panleft panright', function(e) {
-
-window.location.assign("http://www.mozilla.org");
+hammertime.on('panright swiperight', function(e) {
+console.log(this);
+window.location = "/portfolio/audio";
 });
 
 }
