@@ -193,7 +193,7 @@
 .post {
     margin: 100px auto;
     background-color: white;
-    padding: 60px;
+    padding: 70px;
     border: 1px solid #dddddd;
     box-shadow: 20px 20px 70px -20px;
     @include media-query($on-palm) {
@@ -204,7 +204,7 @@
 }
 
 .post p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $small-font-family;
 }
 
 .post-list {

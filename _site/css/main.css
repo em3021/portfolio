@@ -299,7 +299,7 @@ pre {
 .post {
   margin: 100px auto;
   background-color: white;
-  padding: 60px;
+  padding: 70px;
   border: 1px solid #dddddd;
   box-shadow: 20px 20px 70px -20px; }
   @media screen and (max-width: 600px) {
@@ -309,7 +309,7 @@ pre {
       box-shadow: 15px 15px 50px -20px; } }
 
 .post p {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
 .post-list {
   margin-left: 0;
@@ -512,17 +512,27 @@ pre {
   -webkit-backface-visibility: hidden; }
 
 .resume {
-  margin-left: 0;
-  list-style: none; }
+  margin-left: 0; }
   .resume h2 {
-    font-size: 20px;
+    font-size: 22px;
     border-top: 1px solid #dddddd;
-    padding: 10px 0; }
+    padding: 10px 0;
+    margin-top: 50px;
+    margin-bottom: 10px; }
   .resume h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 5px; }
+  .resume h4, .resume h5 {
+    font-size: 14px;
+    font-weight: 100;
+    color: #999; }
   .resume h5 {
-    float: right;
-    color: grey; }
-  .resume p {
-    margin: 10px; }
+    float: right; }
+  .resume li {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 10px;
+    margin-left: 50px;
+    font-size: 16px; }
+  .resume a {
+    color: #111;
+    font-style: bold; }

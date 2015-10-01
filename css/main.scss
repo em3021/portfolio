@@ -6,6 +6,7 @@
 // Our variables
 $base-font-family: Meta OT, 'Oswald', sans-serif;
 $base-font-size:   16px;
+$small-font-family: 'Source Sans Pro', sans-serif;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
@@ -67,26 +68,36 @@ $on-laptop:        800px;
 
 .resume {
         margin-left: 0;
-        list-style: none;
+
         h2 {
-            font-size: 20px;
+            font-size: 22px;
             border-top: 1px solid #dddddd;
             padding: 10px 0;
+            margin-top: 50px;
+            margin-bottom: 10px;
         }
         h3 {
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 5px;
         }
-        h4 {
-
+        h4, h5 {
+            font-size: $small-font-size;
+            font-weight: 100;
+            color: #999;
         }
         h5 {
             float: right;
-            color: grey;
+            
         }
-        p {
+        li {
+            font-family: $small-font-family;
             margin: 10px;
-
+            margin-left:  50px; 
+            font-size: $base-font-size;
+        }
+        a {
+            color: $text-color;
+            font-style: bold;
         }
         
 }
