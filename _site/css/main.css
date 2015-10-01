@@ -536,3 +536,10 @@ pre {
   .resume a {
     color: #111;
     font-style: bold; }
+
+.fa-download {
+  float: right; }
+
+.fa-2x {
+  font-size: 1.5em;
+  padding: 15px 0; }
