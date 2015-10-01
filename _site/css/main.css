@@ -305,7 +305,7 @@ pre {
   @media screen and (max-width: 600px) {
     .post {
       margin: 70px auto;
-      padding: 40px 15px;
+      padding: 40px 10px;
       box-shadow: 15px 15px 50px -20px; } }
 
 .post p {
@@ -533,6 +533,9 @@ pre {
     margin: 10px;
     margin-left: 50px;
     font-size: 16px; }
+    @media screen and (max-width: 600px) {
+      .resume li {
+        margin-left: 10px; } }
   .resume a {
     color: #111;
     font-style: bold; }
