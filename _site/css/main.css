@@ -542,6 +542,9 @@ pre {
 
 .fa-download {
   float: right; }
+  @media screen and (max-width: 600px) {
+    .fa-download {
+      display: none; } }
 
 .fa-2x {
   font-size: 1.5em;

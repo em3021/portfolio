@@ -107,15 +107,15 @@ $on-laptop:        800px;
 
 .fa-download {
     float: right;
+    @include media-query($on-palm) {
+    display: none;
+}
 }
 .fa-2x {
     font-size: 1.5em;
     padding: 15px 0;
 }
 
-@include media-query($on-palm) {
-	
-}
 
 
 
