@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    height: 180px;
+    height: 150px;
     border-top: 0 solid $grey-color;
     min-height: 56px;
     @include media-query($on-palm) {
@@ -30,13 +30,16 @@
 
 .site-nav {
     position: relative;
-    top: 220px;
+    top: 180px;
 
     .trigger a {
-            border: 2px solid white;
+            // border: 2px solid white;
             padding: 5px;
-            border-radius: 1px;
+            // border-radius: 1px;
             transition: all .25s ease-in-out;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
     }
 
     /*.menu-icon {
@@ -191,7 +194,7 @@
 }
 
 .post {
-    margin: 100px auto;
+    margin: 80px auto;
     background-color: white;
     padding: 70px;
     border: 1px solid #dddddd;
@@ -224,7 +227,7 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     @include media-query($on-palm) {
         font-size: 20px;
     }
@@ -240,10 +243,11 @@
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
+    font-size: 22px;
+    letter-spacing: 1px;
     font-weight: 300;
     line-height: 1;
+    text-transform: uppercase;
     /*border-top: 3px solid $text-color;*/
 
 
@@ -273,7 +277,7 @@
     }
 
     h4 {
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 0px;
         color: grey;
 

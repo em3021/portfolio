@@ -31,7 +31,10 @@ body {
     border-top: 1px solid white;
 }
 
-
+button {
+    border: none;
+    background-color: transparent;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm

@@ -116,8 +116,87 @@ $on-laptop:        800px;
     padding: 15px 0;
 }
 
+/*---Player Styles-------------------------------------*/
+
+.player {
+
+ }
+
+.jp-audio {
+  width: 80%;
+  position: relative; 
+}
+
+.jp-progress {
+  background-color: #ccc;
+  width: 100%;
+  height: 5px; 
+}
+
+.jp-play-bar {
+  background-color: #8C3944;
+  height: 5px; 
+}
+
+.jp-gui {
+ }
+
+.fa-fast-forward {
+  margin-left: 290px; 
+  }
+
+.fa-volume-up {
+  margin-left: 210px; 
+}
+
+.jp-playlist {
+  display: none; 
+}
+
+.jp-volume-bar {
+  height: 5px;
+  width: 50%;
+  background-color: #b04856;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 35px;
+  margin-bottom: 5px; 
+}
+
+.jp-current-time {
+  display: none;
+}
+
+.jp-duration {
+  float: right;
+  margin: 15px; 
+}
+
+.all-controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: none; 
+}
+
+.fa-play-circle-o {
+  color: #8C3944;
+  position: absolute;
+  top: 36%;
+  right: 40%;
+  display: inherit; 
+}
+
+.fa-pause {
+  display: none; 
+}
+
+.jp-volume-max {
+  display: none; 
+}
 
 
+/**/
 
 
 
