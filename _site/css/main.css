@@ -558,7 +558,7 @@ pre {
 
 /*---Player Styles-------------------------------------*/
 .jp-audio {
-  width: 80%;
+  width: 100%;
   position: relative; }
 
 .jp-progress {
@@ -573,11 +573,11 @@ pre {
 .fa-fast-forward {
   margin-left: 290px; }
 
-.fa-volume-up {
-  margin-left: 210px; }
-
 .jp-playlist {
   display: none; }
+
+.fa-volume-up {
+  margin-left: 210px; }
 
 .jp-volume-bar {
   height: 5px;
@@ -593,7 +593,8 @@ pre {
 
 .jp-duration {
   float: right;
-  margin: 15px; }
+  margin: 15px;
+  font-size: 12px; }
 
 .all-controls {
   position: absolute;

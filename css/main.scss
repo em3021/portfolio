@@ -123,7 +123,7 @@ $on-laptop:        800px;
  }
 
 .jp-audio {
-  width: 80%;
+  width: 100%;
   position: relative; 
 }
 
@@ -143,16 +143,15 @@ $on-laptop:        800px;
 
 .fa-fast-forward {
   margin-left: 290px; 
-  }
-
-.fa-volume-up {
-  margin-left: 210px; 
 }
 
 .jp-playlist {
   display: none; 
 }
 
+.fa-volume-up {
+  margin-left: 210px; 
+}
 .jp-volume-bar {
   height: 5px;
   width: 50%;
@@ -170,6 +169,7 @@ $on-laptop:        800px;
 .jp-duration {
   float: right;
   margin: 15px; 
+  font-size: 12px;
 }
 
 .all-controls {
