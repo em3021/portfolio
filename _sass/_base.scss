@@ -34,13 +34,14 @@ body {
 button {
     border: none;
     background-color: transparent;
-    &:hover {
+     &:hover {
         cursor: pointer;
         opacity: .5;
-    }
+        }
     @include media-query($on-palm) {
         &:hover {
-        
+        cursor: default;
+        opacity: 1;
         }
     }
     &:focus {
