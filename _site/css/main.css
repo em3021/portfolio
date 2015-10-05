@@ -322,6 +322,9 @@ pre {
   .post-list li {
     border-top: 1px solid #dddddd;
     padding: 10px; }
+    @media screen and (max-width: 600px) {
+      .post-list li {
+        padding: 10px 0; } }
 
 .post-meta {
   font-size: 14px;
@@ -347,9 +350,6 @@ pre {
   line-height: 1;
   text-transform: uppercase;
   /*border-top: 3px solid $text-color;*/ }
-  @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 36px; } }
 
 .post-content {
   margin-bottom: 30px; }

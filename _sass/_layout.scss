@@ -217,6 +217,9 @@
     li {
         border-top: 1px solid #dddddd;
         padding: 10px;
+        @include media-query($on-palm) {
+            padding: 10px 0;
+        }
     }
 }
 
@@ -249,12 +252,6 @@
     line-height: 1;
     text-transform: uppercase;
     /*border-top: 3px solid $text-color;*/
-
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-        
 }
 
 .post-content {
