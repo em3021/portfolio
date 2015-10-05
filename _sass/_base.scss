@@ -38,6 +38,11 @@ button {
         cursor: pointer;
         opacity: .5;
     }
+    @include media-query($on-palm) {
+        &:hover {
+        
+        }
+    }
     &:focus {
         outline: none;
     }
