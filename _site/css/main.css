@@ -28,14 +28,17 @@ body {
 
 button {
   border: none;
-  background-color: transparent; }
-  button:hover {
+  background-color: transparent;
+ /*&:hover {
     cursor: pointer;
-    opacity: .5; }
-  @media screen and (max-width: 600px) {
-    button:hover {
-      cursor: default;
-      opacity: 1; } }
+    opacity: .5;
+    }
+@include media-query($on-palm) {
+    &:hover {
+    cursor: default;
+    opacity: 1;
+    }
+}*/ }
   button:focus {
     outline: none; }
 
