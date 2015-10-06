@@ -377,7 +377,7 @@ pre {
     margin-bottom: 0px;
     color: grey; }
   .post-content img {
-    border: 1px solid #dddddd; }
+    margin: 10px 0; }
 
 /**
  * Syntax highlighting styles
