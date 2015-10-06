@@ -38,7 +38,7 @@ $(document).ready(function() {
         // swfPath: "http://jplayer.org/latest/dist/jplayer",
         supplied: "mp3, oga",
 		volume: 0.8,
-		wmode: "window",
+		// wmode: "window",
 		useStateClassSkin: true,
 		autoBlur: false,
 		smoothPlayBar: true,
