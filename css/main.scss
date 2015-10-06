@@ -95,7 +95,7 @@ $on-laptop:        800px;
             margin-left:  50px; 
             font-size: $base-font-size;
             @include media-query($on-palm) {
-                margin-left: 10px;
+                margin-left: 15px;
             }
         }
         a {
