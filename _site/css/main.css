@@ -28,17 +28,14 @@ body {
 
 button {
   border: none;
-  background-color: transparent;
- /*&:hover {
+  background-color: transparent; }
+  button:hover {
     cursor: pointer;
-    opacity: .5;
-    }
-@include media-query($on-palm) {
-    &:hover {
-    cursor: default;
-    opacity: 1;
-    }
-}*/ }
+    opacity: .5; }
+  @media screen and (max-width: 600px) {
+    button:hover {
+      cursor: default;
+      opacity: 1; } }
   button:focus {
     outline: none; }
 
@@ -306,7 +303,8 @@ pre {
   padding: 30px 0;
   background-color: #E1565E;
   color: #111;
-  min-height: 100%; }
+  min-height: 100%;
+  background-image: url("{{ site.baseurl }}/assets/img/triangles.png"); }
 
 .page-content:after {
   content: "";

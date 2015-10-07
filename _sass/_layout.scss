@@ -184,6 +184,7 @@
     background-color: $pink;
     color: $text-color;
     min-height: 100%;
+    background-image: url("{{ site.baseurl }}/assets/img/triangles.png") no-repeat;
 }
 
 .page-content:after {
