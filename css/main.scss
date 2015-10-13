@@ -61,8 +61,11 @@ $on-laptop:        800px;
 
 .site-nav .trigger a:hover {
         color: $text-color;
-        text-decoration: underline;
         background-color: white;
+}
+
+.site-title:hover {
+        opacity: .8;
 }
 .ui-page { -webkit-backface-visibility: hidden; }
 

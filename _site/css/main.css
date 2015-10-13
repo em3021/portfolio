@@ -85,12 +85,12 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: #2a7ae2;
-  text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
+  text-decoration: none;
+  /*    &:visited {
+          color: darken($brand-color, 15%);
+      }*/ }
   a:hover {
-    color: #111;
-    text-decoration: underline; }
+    color: #111; }
 
 /**
  * Blockquotes
@@ -179,15 +179,13 @@ pre {
       height: 130px; } }
 
 .site-title {
-  background-color: #111;
-  color: white;
-  padding: 10px;
-  font-size: 26px;
-  letter-spacing: -1px;
+  color: #111;
+  margin: 10px;
+  font-size: 40px;
+  letter-spacing: 1px;
   margin-bottom: 0;
-  float: left; }
-  .site-title, .site-title:visited {
-    color: white; }
+  float: left;
+  border-top: 1px solid; }
 
 .site-nav {
   position: relative;
@@ -337,9 +335,13 @@ pre {
     @media screen and (max-width: 600px) {
       .post-list li {
         padding: 10px 0; } }
-  .post-list p {
+  .post-list .dek {
     font-size: 14px;
-    font-style: italic; }
+    font-style: italic;
+    margin: 10px 0 30px 30px; }
+    @media screen and (max-width: 600px) {
+      .post-list .dek {
+        margin-left: 0; } }
 
 .post-meta {
   font-size: 14px;
@@ -526,8 +528,10 @@ pre {
 
 .site-nav .trigger a:hover {
   color: #111;
-  text-decoration: underline;
   background-color: white; }
+
+.site-title:hover {
+  opacity: .8; }
 
 .ui-page {
   -webkit-backface-visibility: hidden; }
