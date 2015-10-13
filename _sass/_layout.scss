@@ -224,6 +224,10 @@
             padding: 10px 0;
         }
     }
+    p {
+        font-size: $small-font-size;
+        font-style: italic;
+    }
 }
 
 .post-meta {
