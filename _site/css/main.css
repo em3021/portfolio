@@ -578,6 +578,12 @@ pre {
     color: #111;
     font-style: bold; }
 
+.fa-headphones,
+.fa-code,
+.fa-file-text,
+.fa-paragraph {
+  color: white; }
+
 .fa-download {
   float: right; }
   @media screen and (max-width: 600px) {
