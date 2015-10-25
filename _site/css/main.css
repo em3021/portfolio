@@ -243,7 +243,7 @@ pre {
  */
 .site-footer {
   padding: 30px 0;
-  border-bottom: 10px solid #E1565E;
+  border-bottom: 10px solid #B7172D;
   height: 50px; }
   @media screen and (max-width: 600px) {
     .site-footer {
@@ -299,7 +299,7 @@ pre {
  */
 .page-content {
   padding: 30px 0;
-  background-color: #E1565E;
+  background-color: #B7172D;
   color: #111;
   min-height: 100%; }
 
