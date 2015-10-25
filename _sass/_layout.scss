@@ -296,6 +296,12 @@
         border-radius: 5px;
         opacity: .6;
         transition: all .25s ease-in-out;
+        border: 1px solid #eee;
+        @include media-query($on-palm) {
+            border: none;
+            border-radius: 0;
+            opacity: 1;
+        }
     }
 
     img:hover {
