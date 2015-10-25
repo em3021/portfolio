@@ -166,6 +166,7 @@ pre {
   .icon > svg path {
     fill: #33262C; }
 
+/*- Sass mixins --------------------------------------------------------------*/
 /**
  * Site header
  */
@@ -537,6 +538,7 @@ pre {
   .highlight .il {
     color: #099; }
 
+/*- Sass mixins --------------------------------------------------------------*/
 .site-nav .trigger a:hover {
   color: #111;
   background-color: white; }
