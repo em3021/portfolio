@@ -55,7 +55,8 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "mixins"
 ;
 
 
@@ -67,6 +68,9 @@ $on-laptop:        800px;
 .site-title:hover {
         opacity: .8;
 }
+
+
+
 .ui-page { -webkit-backface-visibility: hidden; }
 
 .resume {
@@ -106,6 +110,12 @@ $on-laptop:        800px;
             font-style: bold;
         }
         
+}
+.fa-headphones,
+.fa-code,
+.fa-file-text,
+.fa-paragraph {
+  color: white;
 }
 
 .fa-download {
