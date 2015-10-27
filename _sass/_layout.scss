@@ -105,7 +105,7 @@
 .site-footer {
     padding: $spacing-unit 0;
     // border-bottom: 10px solid $pink;
-    border-bottom: 10px solid #B7172D;
+    // border-bottom: 10px solid #B7172D;
     height: 50px;
     @include media-query($on-palm) {
         height: auto;
