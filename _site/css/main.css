@@ -198,7 +198,7 @@ pre {
   .site-nav .trigger a {
     padding: 5px;
     transition: all .25s ease-in-out;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px; }
   .site-nav .page-link {
@@ -539,9 +539,9 @@ pre {
     color: #099; }
 
 /*- Sass mixins --------------------------------------------------------------*/
-.site-nav .trigger a:hover {
-  color: #111;
-  background-color: white; }
+.site-nav .trigger a:hover .fa {
+  opacity: 1;
+  color: white; }
 
 .site-title:hover {
   opacity: .8; }
@@ -582,7 +582,11 @@ pre {
 .fa-code,
 .fa-file-text,
 .fa-paragraph {
-  color: white; }
+  color: #111;
+  opacity: .5;
+  /*  &:hover {
+      opacity: 1;
+    }*/ }
 
 .fa-download {
   float: right; }

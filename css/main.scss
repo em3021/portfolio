@@ -61,8 +61,12 @@ $on-laptop:        800px;
 
 
 .site-nav .trigger a:hover {
-        color: $text-color;
-        background-color: white;
+        // color: $text-color;
+        // background-color: white;
+        .fa { 
+          opacity: 1;
+          color: white;
+        }
 }
 
 .site-title:hover {
@@ -115,7 +119,11 @@ $on-laptop:        800px;
 .fa-code,
 .fa-file-text,
 .fa-paragraph {
-  color: white;
+  color: $text-color;
+  opacity: .5;
+/*  &:hover {
+    opacity: 1;
+  }*/
 }
 
 .fa-download {

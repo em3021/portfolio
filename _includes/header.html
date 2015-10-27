@@ -13,31 +13,13 @@
             </svg>
           </a> -->
 
-<!--           <i class="fa fa-headphones"></i>
-          <i class="fa fa-code"></i>
-          <i class="fa fa-file-text"></i>
-          <i class="fa fa-paragraph"></i> -->
+
 
       <div class="trigger">
-<!--         {% case page.category %}
-        {% when 'audio' %}
-        {% include icons/post-circle.min.svg %}
-
-        {% when 'design' %}
-        {% include icons/link-circle.min.svg %}
-
-        {% when 'resume' %}
-        {% include icons/photo-circle.min.svg %}
-
-        {% when 'writing' %}
-        {% include icons/photo-circle.min.svg %}
-
-        {% endcase %} -->
 
         {% for page in site.pages %}
         {% if page.title %}
-          <!-- <i class="fa {% page.icon %}"></i> --> 
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}"  data-transition="slide">{{ page.title }}</a>
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}"  data-transition="slide"><i class="fa {{ page.icon }}"></i> {{ page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>
