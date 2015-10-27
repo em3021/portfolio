@@ -172,7 +172,7 @@ pre {
  */
 .site-header {
   height: 150px;
-  border-top: 0 solid #33262C;
+  border-top: 2px solid #3C070E;
   min-height: 56px;
   position: relative; }
   @media screen and (max-width: 600px) {
@@ -186,7 +186,6 @@ pre {
   letter-spacing: 1px;
   margin-bottom: 0;
   float: left;
-  border-top: 1px solid;
   opacity: .75; }
 
 .site-nav {
