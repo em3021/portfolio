@@ -16,13 +16,14 @@
 }
 
 .site-title {
-    color: $text-color;
+    color: #3C070E;
     margin: 10px;
     font-size: 40px;
     letter-spacing: 1px;
     margin-bottom: 0;
     float: left;
     border-top: 1px solid;
+    opacity: .75;
 }
 
 .site-nav {
