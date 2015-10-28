@@ -13,22 +13,41 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html {
+    height: 100%;
+}
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
+    background-color: white;
     -webkit-text-size-adjust: 100%;
-
+    height: 100%;
 }
 
 .section {
     border-top: 1px solid white;
 }
 
-
+button {
+    border: none;
+    background-color: transparent;
+     &:hover {
+        cursor: pointer;
+        opacity: .5;
+        }
+    @include media-query($on-palm) {
+        &:hover {
+        cursor: default;
+        opacity: 1;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -97,13 +116,12 @@ a {
     color: $brand-color;
     text-decoration: none;
 
-    &:visited {
+/*    &:visited {
         color: darken($brand-color, 15%);
-    }
+    }*/
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
         
     }
 }
@@ -166,6 +184,7 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    width: 55%;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
@@ -174,6 +193,9 @@ pre {
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
+    @include media-query($on-palm) {
+            width: 90%;
+        }
 }
 
 

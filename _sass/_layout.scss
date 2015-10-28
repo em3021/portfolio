@@ -1,45 +1,47 @@
+@import "mixins";
+
 /**
  * Site header
  */
 .site-header {
-    height: 200px;
-    border-top: 0 solid $grey-color;
+    height: 150px;
+    border-top: 2px solid #3C070E;
     min-height: 56px;
+    @include media-query($on-palm) {
+        height: 130px;
+    }
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    background-color: $grey-color;
-    color: white;
-    padding: 10px;
-    font-size: 26px;
-    letter-spacing: -1px;
+    color: #3C070E;
+    margin: 10px;
+    font-size: 40px;
+    letter-spacing: 1px;
     margin-bottom: 0;
     float: left;
-
-    &,
-    &:visited {
-        color: white;
-    }
 }
 
 .site-nav {
     position: relative;
-    top: 220px;
+    top: 180px;
 
     .trigger a {
-            border: 2px solid white;
+            // border: 2px solid white;
             padding: 5px;
-            border-radius: 1px;
+            // border-radius: 1px;
             transition: all .25s ease-in-out;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
     }
 
-    .menu-icon {
+    /*.menu-icon {
         display: none;
     }
-
+*/
     .page-link {
         color: white;
         line-height: $base-line-height;
@@ -52,15 +54,9 @@
 
 
     @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
+        position: relative;
+        top: 90px;
+        /*.menu-icon {
             display: block;
             float: right;
             width: 36px;
@@ -77,24 +73,23 @@
                     fill: $grey-color-dark;
                 }
             }
-        }
+        }*/
 
         .trigger {
-            border: 1px solid #bf4600;
-            padding: 5px;
-            border-radius: 5px;
-            clear: both;
-            display: none;
+            float: left;
+        }
+
+        .trigger a {
+            border: none;
         }
 
         &:hover .trigger {
             display: block;
             padding-bottom: 5px;
-            
-        }
+       }
 
         .page-link {
-            display: block;
+            display: inline;
             padding: 5px 10px;
         }
 
@@ -108,7 +103,12 @@
  */
 .site-footer {
     padding: $spacing-unit 0;
-    border-bottom: 10px solid $pink;
+    // border-bottom: 10px solid $pink;
+    // border-bottom: 10px solid #B7172D;
+    height: 50px;
+    @include media-query($on-palm) {
+        height: auto;
+    }
 }
 
 .footer-heading {
@@ -178,8 +178,16 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    background-color: $pink;
-    color: white;
+    // background-color: $pink;
+    background-color: #B7172D;
+    color: $text-color;
+    min-height: 100%;
+}
+
+.page-content:after {
+    content: "";
+  display: block;
+  height: 50px;
 }
 
 .page-heading {
@@ -187,19 +195,40 @@
 }
 
 .post {
-    margin-top: 100px;
+    margin: 80px auto;
+    background-color: white;
+    padding: 70px;
+    border: 1px solid #dddddd;
+    box-shadow: 20px 20px 70px -20px;
+    @include media-query($on-palm) {
+            margin: 70px auto;
+            padding: 40px 10px;
+            box-shadow: 15px 15px 50px -20px;
+        }
 }
 
 .post p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $small-font-family;
 }
 
 .post-list {
     margin-left: 0;
     list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
+    li {
+        border-top: 1px solid #dddddd;
+        padding: 10px;
+        @include media-query($on-palm) {
+            padding: 10px 0;
+        }
+    }
+ .dek {
+        font-size: 14px;
+        font-style: italic;
+        margin: 10px 0 30px 30px;
+        @include media-query($on-palm) {
+            margin-left: 0;
+        }
     }
 }
 
@@ -210,7 +239,10 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
+    @include media-query($on-palm) {
+        font-size: 20px;
+    }
 }
 
 
@@ -223,16 +255,12 @@
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
+    font-size: 22px;
+    letter-spacing: 1px;
     font-weight: 300;
     line-height: 1;
-    border-top: 3px solid white;
-
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+    text-transform: uppercase;
+    /*border-top: 3px solid $text-color;*/
 }
 
 .post-content {
@@ -255,10 +283,29 @@
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 12px;
+        margin-bottom: 0px;
+        color: grey;
 
         @include media-query($on-laptop) {
-            font-size: 18px;
+            
         }
+    }
+
+    img {
+        margin: 10px 0;
+        border-radius: 5px;
+        opacity: .6;
+        transition: all .25s ease-in-out;
+        border: 1px solid #eee;
+        @include media-query($on-palm) {
+            border: none;
+            border-radius: 0;
+            opacity: 1;
+        }
+    }
+
+    img:hover {
+        opacity: 1;
     }
 }
