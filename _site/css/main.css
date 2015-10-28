@@ -185,8 +185,7 @@ pre {
   font-size: 40px;
   letter-spacing: 1px;
   margin-bottom: 0;
-  float: left;
-  opacity: .75; }
+  float: left; }
 
 .site-nav {
   position: relative;
@@ -543,7 +542,7 @@ pre {
   color: white; }
 
 .site-title:hover {
-  opacity: 1;
+  opacity: .75;
   color: #3C070E; }
 
 .ui-page {
