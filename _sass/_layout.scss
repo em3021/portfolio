@@ -199,11 +199,11 @@
     background-color: white;
     padding: 70px;
     border: 1px solid #dddddd;
-    box-shadow: 20px 20px 70px -20px;
+    // box-shadow: 20px 20px 70px -20px;
     @include media-query($on-palm) {
             margin: 70px auto;
             padding: 40px 10px;
-            box-shadow: 15px 15px 50px -20px;
+            // box-shadow: 15px 15px 50px -20px;
         }
 }
 
