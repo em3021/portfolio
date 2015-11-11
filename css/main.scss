@@ -76,6 +76,16 @@ $on-laptop:        800px;
         // color: #3C070E;
 }
 
+.sticky-nav {
+    min-height: 50px;
+    font-size: 20px;
+    position: fixed;
+    background: white;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    top: 0;
+    height: auto;
+}
 
 
 .ui-page { -webkit-backface-visibility: hidden; }

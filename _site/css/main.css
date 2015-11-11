@@ -174,6 +174,7 @@ pre {
   height: 95%;
   top: 30%;
   min-height: 56px;
+  transition: all .25s ease-in-out;
   position: relative; }
   .site-header .wrapper {
     padding: 0;
@@ -545,6 +546,16 @@ pre {
 
 .site-title:hover {
   opacity: .75; }
+
+.sticky-nav {
+  min-height: 50px;
+  font-size: 20px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  top: 0;
+  height: auto; }
 
 .ui-page {
   -webkit-backface-visibility: hidden; }

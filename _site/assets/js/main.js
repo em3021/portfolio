@@ -1,29 +1,36 @@
-$.mobile.autoInitializePage = false;
 
-$(window).load(function() {
-initHammertime();
-});
+// $('.page-link').click(function() {
+//      $('.site-header').addClass('sticky-nav');
+// });
 
-function initHammertime() {
+// Hammertime.js --------------/
 
-var myElement = document.getElementById('home');
+// $.mobile.autoInitializePage = false;
 
-var swipeOptions = {
-  dragLockToAxis: true,
-  dragBlockHorizontal: true
-};
+// $(window).load(function() {
+// initHammertime();
+// });
 
-var hammertime = new Hammer(myElement, swipeOptions);
+// function initHammertime() {
 
-hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+// var myElement = document.getElementById('home');
 
-hammertime.on('panleft swipeleft', function(e) {
+// var swipeOptions = {
+//   dragLockToAxis: true,
+//   dragBlockHorizontal: true
+// };
 
-window.location.href = "audio";
+// var hammertime = new Hammer(myElement, swipeOptions);
 
-});
+// hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
-}
+// hammertime.on('panleft swipeleft', function(e) {
+
+// window.location.href = "audio";
+
+// });
+
+// }
 
 $(document).ready(function() {
 
