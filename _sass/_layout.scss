@@ -4,15 +4,16 @@
  * Site header
  */
 .site-header {
-    height: 150px;
-    border-top: 2px solid #3C070E;
+    height: 95%;
+    top: 30%;
+    // border-top: 2px solid #3C070E;
     min-height: 56px;
     .wrapper {
         padding: 0;
         width: 100%;
     }
     @include media-query($on-palm) {
-        height: 130px;
+        // height: 130px;
     }
 
     // Positioning context for the mobile navigation icon
@@ -20,17 +21,19 @@
 }
 
 .site-title {
-    color: #3C070E;
+    color: $text-color;
     margin: 10px;
-    font-size: 40px;
+    font-size: 60px;
     letter-spacing: 1px;
     margin-bottom: 0;
     float: left;
+    padding-right: 70px;
 }
 
 .site-nav {
     position: relative;
-    top: 180px;
+    top: 60px;
+    display: inline-block;
 
     .trigger a {
             // border: 2px solid white;
@@ -47,7 +50,7 @@
     }
 */
     .page-link {
-        color: white;
+        color: $text-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -183,7 +186,7 @@
 .page-content {
     padding: $spacing-unit 0;
     // background-color: $pink;
-    background-color: #B7172D;
+    background-color: #130B39;
     color: $text-color;
     min-height: 100%;
 }
@@ -299,7 +302,7 @@
     img {
         margin: 10px 0;
         border-radius: 5px;
-        opacity: .6;
+        opacity: .8;
         transition: all .25s ease-in-out;
         border: 1px solid #eee;
         @include media-query($on-palm) {

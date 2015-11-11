@@ -27,6 +27,7 @@ $dark-blue: rgb(25, 34, 54);
 $dark-red: #36011D;
 $red: #440514;
 $pink: #E1565E;
+$main-red: #B7172D;
 
 // Width of the content area
 $content-width:    800px;
@@ -63,6 +64,7 @@ $on-laptop:        800px;
 .site-nav .trigger a:hover {
         // color: $text-color;
         // background-color: white;
+        opacity: .75;
         .fa { 
           opacity: 1;
           color: white;
@@ -71,7 +73,7 @@ $on-laptop:        800px;
 
 .site-title:hover {
         opacity: .75;
-        color: #3C070E;
+        // color: #3C070E;
 }
 
 
