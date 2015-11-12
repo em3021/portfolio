@@ -4,10 +4,14 @@
  * Site header
  */
 .site-header {
-    height: 95%;
-    top: 30%;
-    // border-top: 2px solid #3C070E;
-    min-height: 56px;
+    min-height: 50px;
+    font-size: 20px;
+    position: fixed;
+    background: white;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    top: 0;
+    height: auto;
     transition: all .25s ease-in-out;
     .wrapper {
         padding: 0;

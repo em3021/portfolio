@@ -75,7 +75,47 @@
 
     <div data-role='page' class="page-content">
       <div class="wrapper">
-        <div class="post" id="home">
+        <style type="text/css">
+.site-header {
+    height: 95%;
+    // border-top: 2px solid #3C070E;
+    min-height: 56px;
+    transition: all .25s ease-in-out;
+    @include media-query($on-palm) {
+        // height: 130px;
+    }
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.site-header .wrapper {
+        padding: 0;
+        width: 100%;
+        top: 30%;
+        position: relative;
+    }
+
+.site-title {
+    color: $text-color;
+    margin: 10px;
+    font-size: 60px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    float: left;
+    padding-right: 70px;
+}
+
+.site-nav {
+    position: relative;
+    top: 60px;
+    display: inline-block;
+    }
+
+
+</style>
+
+<div class="post" id="home">
 
   <header class="post-header">
     <span class="post-title">About</span>      
