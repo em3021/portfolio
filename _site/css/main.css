@@ -172,13 +172,13 @@ pre {
  */
 .site-header {
   min-height: 50px;
-  font-size: 20px;
   position: fixed;
   background: white;
   width: 100%;
   border-bottom: 1px solid #ccc;
   top: 0;
   height: auto;
+  border-top: 1px solid #130B39;
   transition: all .25s ease-in-out; }
   .site-header .wrapper {
     padding: 0;
@@ -187,7 +187,7 @@ pre {
 .site-title {
   color: #111;
   margin: 10px;
-  font-size: 60px;
+  font-size: 20px;
   letter-spacing: 1px;
   margin-bottom: 0;
   float: left;
@@ -195,7 +195,7 @@ pre {
 
 .site-nav {
   position: relative;
-  top: 60px;
+  top: 15px;
   display: inline-block;
     /*.menu-icon {
         display: none;
