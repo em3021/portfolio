@@ -179,8 +179,7 @@ pre {
   border-bottom: 1px solid #ccc;
   top: 0;
   height: auto;
-  transition: all .25s ease-in-out;
-  position: relative; }
+  transition: all .25s ease-in-out; }
   .site-header .wrapper {
     padding: 0;
     width: 100%; }
