@@ -78,13 +78,18 @@ $on-laptop:        800px;
 
 .sticky-nav {
     min-height: 50px;
-    font-size: 20px;
     position: fixed;
     background: white;
     width: 100%;
     border-bottom: 1px solid #ccc;
     top: 0;
     height: auto;
+    .site-title {
+      font-size: 20px;
+    }
+    .site-nav {
+      top: 14px;
+    }
 }
 
 
