@@ -6,8 +6,13 @@
 </description>
     <link>http://em3021.github.io/portfolio/</link>
     <atom:link href="http://em3021.github.io/portfolio/feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Fri, 13 Nov 2015 14:53:35 -0500</pubDate>
     <lastBuildDate>Fri, 13 Nov 2015 14:53:35 -0500</lastBuildDate>
+=======
+    <pubDate>Fri, 13 Nov 2015 14:52:12 -0500</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2015 14:52:12 -0500</lastBuildDate>
+>>>>>>> dev
     <generator>Jekyll v2.5.3</generator>
     
       <item>

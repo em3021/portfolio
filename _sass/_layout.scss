@@ -4,10 +4,15 @@
  * Site header
  */
 .site-header {
-    height: 95%;
-    top: 30%;
-    // border-top: 2px solid #3C070E;
-    min-height: 56px;
+    min-height: 50px;
+    position: fixed;
+    background: white;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    top: 0;
+    height: auto;
+    z-index: 1;
+    // border-top: 1px solid #130B39;
     transition: all .25s ease-in-out;
     .wrapper {
         padding: 0;
@@ -18,13 +23,14 @@
     }
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    // position: relative;
 }
+
 
 .site-title {
     color: $text-color;
     margin: 10px;
-    font-size: 60px;
+    font-size: 20px;
     letter-spacing: 1px;
     margin-bottom: 0;
     float: left;
@@ -33,7 +39,7 @@
 
 .site-nav {
     position: relative;
-    top: 60px;
+    top: 15px;
     display: inline-block;
 
     .trigger a {
@@ -186,8 +192,8 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    // background-color: $pink;
-    background-color: #130B39;
+    background-color: $main-blue;
+    // background-color: #130B39;
     color: $text-color;
     min-height: 100%;
 }
