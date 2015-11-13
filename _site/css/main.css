@@ -178,7 +178,7 @@ pre {
   border-bottom: 1px solid #ccc;
   top: 0;
   height: auto;
-  border-top: 1px solid #130B39;
+  z-index: 1;
   transition: all .25s ease-in-out; }
   .site-header .wrapper {
     padding: 0;
@@ -551,6 +551,33 @@ pre {
 .site-title:hover {
   opacity: .75; }
 
+.home-header {
+  height: 95%;
+  min-height: 56px;
+  position: relative;
+  border: none;
+  transition: all .25s ease-in-out; }
+
+.home-header .wrapper {
+  padding: 0;
+  width: 100%;
+  top: 30%;
+  position: relative; }
+
+.home-header .site-title {
+  color: #111;
+  margin: 10px;
+  font-size: 60px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  float: left;
+  padding-right: 70px; }
+
+.home-header .site-nav {
+  position: relative;
+  top: 60px;
+  display: inline-block; }
+
 .sticky-nav {
   min-height: 50px;
   position: fixed;
@@ -564,6 +591,13 @@ pre {
   .sticky-nav .site-nav {
     top: 14px; }
 
+/*#home {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 20px;
+  line-height: 2;
+}*/
 .ui-page {
   -webkit-backface-visibility: hidden; }
 

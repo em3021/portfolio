@@ -1,10 +1,10 @@
 
 $(window).scroll(function() {
 if ($(this).scrollTop() > 1){  
-    $('.site-header').addClass("sticky-nav");
+    $('.home-header').addClass("sticky-nav");
   }
   else{
-    $('.site-header').removeClass("sticky-nav");
+    $('.home-header').removeClass("sticky-nav");
   }
 });
 

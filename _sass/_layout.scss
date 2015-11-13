@@ -11,7 +11,8 @@
     border-bottom: 1px solid #ccc;
     top: 0;
     height: auto;
-    border-top: 1px solid #130B39;
+    z-index: 1;
+    // border-top: 1px solid #130B39;
     transition: all .25s ease-in-out;
     .wrapper {
         padding: 0;
@@ -190,8 +191,8 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    // background-color: $pink;
-    background-color: #130B39;
+    background-color: $main-blue;
+    // background-color: #130B39;
     color: $text-color;
     min-height: 100%;
 }

@@ -1,12 +1,12 @@
 
-// $(window).scroll(function() {
-// if ($(this).scrollTop() > 1){  
-//     $('header').addClass("sticky-nav");
-//   }
-//   else{
-//     $('header').removeClass("sticky-nav");
-//   }
-// });
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){  
+    $('.home-header').addClass("sticky-nav");
+  }
+  else{
+    $('.home-header').removeClass("sticky-nav");
+  }
+});
 
 // Hammertime.js --------------/
 
