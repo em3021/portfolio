@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <header class="home-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <nav class="site-nav">
+      <div class="trigger">
+
+        {% for page in site.pages %}
+        {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}"  data-transition="slide"><!-- <i class="{{ page.icon }}"></i>  -->{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div data-role='page' class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+    
+
+    {% include footer.html %}
+
+  </body>
+</html>
