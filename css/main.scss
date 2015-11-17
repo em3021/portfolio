@@ -65,7 +65,7 @@ $on-laptop:        800px;
 .site-nav .trigger a:hover {
         // color: $text-color;
         // background-color: white;
-        opacity: .75;
+        opacity: .6;
         .fa { 
           opacity: 1;
           color: white;
@@ -104,12 +104,18 @@ $on-laptop:        800px;
     margin-bottom: 0;
     float: left;
     padding-right: 70px;
+    @include media-query($on-palm) {
+        padding-right: 0;
+    }
 }
 
 .home-header .site-nav {
     position: relative;
     top: 60px;
     display: inline-block;
+     @include media-query($on-palm) {
+        font-size: 12px;
+      }
     }
 
 .sticky-nav {
@@ -136,6 +142,20 @@ $on-laptop:        800px;
   line-height: 2;
 }*/
 
+#home img {
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+#home.post p {
+  padding-top: 10px;
+}
+
+#home.post .credit {
+  font-size: 12px;
+  text-align: right;
+  color: $text-color;
+}
 
 .ui-page { -webkit-backface-visibility: hidden; }
 
@@ -213,9 +233,9 @@ $on-laptop:        800px;
 }
 
 .jp-progress {
-  background-color: #dddddd;
   width: 100%;
-  height: 1px; 
+  height: 5px;
+  border-top: 1px solid #ddd;
 }
 
 .jp-play-bar {

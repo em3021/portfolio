@@ -35,13 +35,18 @@
     margin-bottom: 0;
     float: left;
     padding-right: 70px;
+     @include media-query($on-palm) {
+        padding-right: 0;
+    }
 }
 
 .site-nav {
     position: relative;
     top: 15px;
     display: inline-block;
-
+ @include media-query($on-palm) {
+        font-size: 12px;
+    }
     .trigger a {
             // border: 2px solid white;
             padding: 5px;
@@ -69,7 +74,6 @@
 
     @include media-query($on-palm) {
         position: relative;
-        top: 90px;
         /*.menu-icon {
             display: block;
             float: right;
@@ -192,7 +196,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    background-color: $main-blue;
+    background-color: $main-red;
     // background-color: #130B39;
     color: $text-color;
     min-height: 100%;
@@ -238,7 +242,6 @@
     }
  .dek {
         font-size: 14px;
-        font-style: italic;
         margin: 10px 0 30px 30px;
         @include media-query($on-palm) {
             margin-left: 0;
