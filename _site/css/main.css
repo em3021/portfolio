@@ -14,11 +14,11 @@ html {
   height: 100%; }
 
 body {
-  font-family: Meta OT, "Oswald", sans-serif;
+  font-family: Meta OT, "Lato", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 300;
   color: #111;
+  font-weight: 300;
   background-color: white;
   -webkit-text-size-adjust: 100%;
   height: 100%; }
@@ -78,7 +78,7 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
+  font-weight: 400; }
 
 /**
  * Links
@@ -179,6 +179,7 @@ pre {
   top: 0;
   height: auto;
   z-index: 1;
+  font-weight: 400;
   transition: all .25s ease-in-out; }
   .site-header .wrapper {
     padding: 0;
@@ -192,6 +193,9 @@ pre {
   margin-bottom: 0;
   float: left;
   padding-right: 70px; }
+  @media screen and (max-width: 600px) {
+    .site-title {
+      padding-right: 0; } }
 
 .site-nav {
   position: relative;
@@ -201,6 +205,9 @@ pre {
         display: none;
     }
 */ }
+  @media screen and (max-width: 600px) {
+    .site-nav {
+      font-size: 12px; } }
   .site-nav .trigger a {
     padding: 5px;
     transition: all .25s ease-in-out;
@@ -215,7 +222,6 @@ pre {
   @media screen and (max-width: 600px) {
     .site-nav {
       position: relative;
-      top: 90px;
         /*.menu-icon {
             display: block;
             float: right;
@@ -305,7 +311,7 @@ pre {
  */
 .page-content {
   padding: 30px 0;
-  background-color: #130B39;
+  background-color: #B7172D;
   color: #111;
   min-height: 100%; }
 
@@ -341,7 +347,6 @@ pre {
         padding: 10px 0; } }
   .post-list .dek {
     font-size: 14px;
-    font-style: italic;
     margin: 10px 0 30px 30px; }
     @media screen and (max-width: 600px) {
       .post-list .dek {
@@ -367,7 +372,7 @@ pre {
 .post-title {
   font-size: 22px;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
   /*border-top: 3px solid $text-color;*/ }
@@ -543,7 +548,7 @@ pre {
 
 /*- Sass mixins --------------------------------------------------------------*/
 .site-nav .trigger a:hover {
-  opacity: .75; }
+  opacity: .6; }
   .site-nav .trigger a:hover .fa {
     opacity: 1;
     color: white; }
@@ -556,6 +561,7 @@ pre {
   min-height: 56px;
   position: relative;
   border: none;
+  font-weight: 400;
   transition: all .25s ease-in-out; }
 
 .home-header .wrapper {
@@ -572,11 +578,17 @@ pre {
   margin-bottom: 0;
   float: left;
   padding-right: 70px; }
+  @media screen and (max-width: 600px) {
+    .home-header .site-title {
+      padding-right: 0; } }
 
 .home-header .site-nav {
   position: relative;
   top: 60px;
   display: inline-block; }
+  @media screen and (max-width: 600px) {
+    .home-header .site-nav {
+      font-size: 12px; } }
 
 .sticky-nav {
   min-height: 50px;
@@ -598,6 +610,18 @@ pre {
   font-size: 20px;
   line-height: 2;
 }*/
+#home img {
+  padding-top: 20px;
+  border-top: 1px solid #ccc; }
+
+#home.post p {
+  padding-top: 10px; }
+
+#home.post .credit {
+  font-size: 12px;
+  text-align: right;
+  color: #111; }
+
 .ui-page {
   -webkit-backface-visibility: hidden; }
 
@@ -657,9 +681,9 @@ pre {
   position: relative; }
 
 .jp-progress {
-  background-color: #ccc;
   width: 100%;
-  height: 5px; }
+  height: 5px;
+  border-top: 1px solid #ddd; }
 
 .jp-play-bar {
   background-color: #8C3944;
