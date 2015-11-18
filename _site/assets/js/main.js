@@ -47,9 +47,8 @@ $(document).ready(function(){
     cssSelectorAncestor: "#jp_container_1"
   }, [
     {
-      title:"Cro Magnon Man",
-      mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
-      oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+      title:"Veteran Hospice Care",
+      mp3:"20141114_me_for_veteran_hospice_care_work_connects_him_to_family.mp3"
     },
     {
       title:"Your Face",
@@ -78,7 +77,7 @@ $(document).ready(function(){
       oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg"
     }
   ], {
-    swfPath: "http://jplayer.org/latest/dist/jplayer",
+    swfPath: "{{ site.baseurl }}/assets/audio",
     supplied: "oga, mp3",
     wmode: "window",
     useStateClassSkin: true,
@@ -87,7 +86,6 @@ $(document).ready(function(){
     keyEnabled: true
   });
 
-  $("#jplayer_inspector_1").jPlayerInspector({jPlayer:$("#jquery_jplayer_1")});
 });
 
 // $(document).ready(function() {
