@@ -12,6 +12,7 @@
     top: 0;
     height: auto;
     z-index: 1;
+    font-weight: 400;
     // border-top: 1px solid #130B39;
     transition: all .25s ease-in-out;
     .wrapper {
@@ -274,7 +275,7 @@
 .post-title {
     font-size: 22px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: bold;
     line-height: 1;
     text-transform: uppercase;
     /*border-top: 3px solid $text-color;*/
