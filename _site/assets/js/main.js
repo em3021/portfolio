@@ -47,37 +47,27 @@ $(document).ready(function(){
     cssSelectorAncestor: "#jp_container_1"
   }, [
     {
+      title:"I'm So Proud to Have You as a Daughter",
+      mp3:"/portfolio/assets/audio/20150619_me_im_so_proud_to_have_you_as_a_daughter.mp3"
+    },
+    {
+      title:"Dad Aches for Son",
+      mp3:"/portfolio/assets/audio/20150515_me_dad_aches_for_tween_son_killed_by_policeman_20_years_ago.mp3"
+    },
+    {
+      title:"Ten Years Later",
+      mp3:"/portfolio/assets/audio/20150306_me_ten_years_later_two_strangers_revisit_what_might_have_been_lost.mp3"
+    },
+    {
+      title:"Remembering a Gian",
+      mp3:"/portfolio/assets/audio/20150116_me_remembering_a_giant.mp3"
+    },
+    {
       title:"Veteran Hospice Care",
-      mp3:"20141114_me_for_veteran_hospice_care_work_connects_him_to_family.mp3"
-    },
-    {
-      title:"Your Face",
-      mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-      oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
-    },
-    {
-      title:"Cyber Sonnet",
-      mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
-      oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
-    },
-    {
-      title:"Tempered Song",
-      mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
-      oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg"
-    },
-    {
-      title:"Hidden",
-      mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
-      oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
-    },
-    {
-      title:"Lentement",
-      free:true,
-      mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
-      oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg"
+      mp3:"/portfolio/assets/audio/20141114_me_for_veteran_hospice_care_work_connects_him_to_family.mp3"
     }
   ], {
-    swfPath: "{{ site.baseurl }}/assets/audio",
+    swfPath: "{{ site.baseurl }}",
     supplied: "oga, mp3",
     wmode: "window",
     useStateClassSkin: true,
