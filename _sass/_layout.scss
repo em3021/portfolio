@@ -110,6 +110,9 @@
         .page-link {
             display: inline;
             padding: 5px 10px;
+            &:not(:first-child) {
+            margin-left: 0;
+        }
         }
 
     }
