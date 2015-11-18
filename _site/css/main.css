@@ -715,6 +715,13 @@ pre {
   margin: 15px;
   font-size: 12px; }
 
+.jp-playlist {
+  display: inherit; }
+  .jp-playlist ul {
+    list-style: none;
+    font-size: 20px;
+    margin: 0; }
+
 .all-controls {
   position: absolute;
   bottom: 0;

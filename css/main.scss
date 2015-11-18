@@ -279,6 +279,15 @@ $on-laptop:        800px;
   font-size: 12px;
 }
 
+.jp-playlist {
+  display: inherit;
+  ul {
+    list-style: none;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
 .all-controls {
   position: absolute;
   bottom: 0;
