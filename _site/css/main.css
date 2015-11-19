@@ -721,6 +721,8 @@ pre {
     list-style: none;
     font-size: 20px;
     margin: 0; }
+  .jp-playlist .source:before {
+    content: "StoryCorps | NPR"; }
 
 .all-controls {
   position: absolute;

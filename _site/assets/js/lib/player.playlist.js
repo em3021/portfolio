@@ -118,7 +118,7 @@
                     a.jPlayer.prototype.format[b] && (e ? e = !1 : d += " | ", d += "<a class='" + c.options.playlistOptions.freeItemClass + "' href='" + f + "' tabindex='-1'>" + b + "</a>")
                 }), d += ")</span>"
             }
-            return d += "<h4 class='source'></h4><a href='javascript:;' class='" + this.options.playlistOptions.itemClass + "' tabindex='0'>" + b.title + "</a>" + (b.intro ? " <div class='dek'><p class='jp-intro'><strong>Intro:</strong> " + b.intro + "</p></div>" : ""), d += "</div></li>"
+            return d += "<a href='" + b.link + "'><h4 class='source'></h4></a><a href='javascript:;' class='" + this.options.playlistOptions.itemClass + "' tabindex='0'>" + b.title + "</a>" + (b.intro ? " <div class='dek'><p class='jp-intro'><strong>Intro:</strong> " + b.intro + "</p></div>" : ""), d += "</div></li>"
         },
         _createItemHandlers: function() {
             var b = this;
