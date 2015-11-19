@@ -14,7 +14,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: Meta OT, "Oswald", sans-serif;
+  font-family: Meta OT, "Lato", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #111;
@@ -550,7 +550,7 @@ pre {
 
 /*- Sass mixins --------------------------------------------------------------*/
 .site-nav .trigger a:hover {
-  opacity: .75; }
+  opacity: .6; }
   .site-nav .trigger a:hover .fa {
     opacity: 1;
     color: white; }
@@ -563,6 +563,7 @@ pre {
   min-height: 56px;
   position: relative;
   border: none;
+  font-weight: 400;
   transition: all .25s ease-in-out; }
 
 .home-header .wrapper {
@@ -579,11 +580,17 @@ pre {
   margin-bottom: 0;
   float: left;
   padding-right: 70px; }
+  @media screen and (max-width: 600px) {
+    .home-header .site-title {
+      padding-right: 0; } }
 
 .home-header .site-nav {
   position: relative;
   top: 60px;
   display: inline-block; }
+  @media screen and (max-width: 600px) {
+    .home-header .site-nav {
+      font-size: 12px; } }
 
 .sticky-nav {
   min-height: 50px;
@@ -605,6 +612,18 @@ pre {
   font-size: 20px;
   line-height: 2;
 }*/
+#home img {
+  padding-top: 20px;
+  border-top: 1px solid #ccc; }
+
+#home.post p {
+  padding-top: 10px; }
+
+#home.post .credit {
+  font-size: 12px;
+  text-align: right;
+  color: #111; }
+
 .ui-page {
   -webkit-backface-visibility: hidden; }
 
@@ -664,9 +683,9 @@ pre {
   position: relative; }
 
 .jp-progress {
-  background-color: #ccc;
   width: 100%;
-  height: 5px; }
+  height: 5px;
+  border-top: 1px solid #ddd; }
 
 .jp-play-bar {
   background-color: #8C3944;
