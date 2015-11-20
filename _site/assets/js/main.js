@@ -47,7 +47,7 @@ $(document).ready(function(){
     cssSelectorAncestor: "#jp_container_1"
   }, [
     {
-      title:"\'I\'m So Proud To Have You As A Daughter\'",
+      title:"&#8216;I&#8217;m So Proud To Have You As A Daughter&#8217;",
       mp3:"/portfolio/assets/audio/20150619_me_im_so_proud_to_have_you_as_a_daughter.mp3",
       intro:'“An immigrant from Haiti talks with his high-IQ daughter about his love for her, and why he works so hard to provide for her education.”',
       link:"http://www.npr.org/2015/06/19/415461277/im-so-proud-to-have-you-as-a-daughter",
@@ -68,7 +68,7 @@ $(document).ready(function(){
       dek:"I pitched this story as an intern at StoryCorps and booked the interviews with Kevin Briggs and Kevin Berthia."
     },
     {
-      title:"Remembering A \'Giant\': \'Everything We Did, We Did Together\'",
+      title:"Remembering A &#8216;Giant&#8217;: &#8216;Everything We Did, We Did Together&#8217;",
       mp3:"/portfolio/assets/audio/20150116_me_remembering_a_giant.mp3",
       intro:'“In his early 20s, Max was in a near-fatal car accident, leaving him quadriplegic and living in a nursing home. One day, he came across a young woman who worked at that nursing home. Her name was Colleen. And at StoryCorps, Colleen sat down with her daughter, Meaghan, to remember Max.”',
       link:"http://www.npr.org/2015/01/16/377450795/remembering-a-giant-everything-we-did-we-did-together",
