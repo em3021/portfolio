@@ -88,7 +88,8 @@ $(document).ready(function(){
     useStateClassSkin: true,
     autoBlur: false,
     smoothPlayBar: true,
-    keyEnabled: true
+    keyEnabled: true,
+    remainingDuration: true
   });
 
 });
