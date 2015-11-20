@@ -200,6 +200,11 @@ $on-laptop:        800px;
         }
         
 }
+
+/*#design a:hover {
+  opacity: 1;
+}*/
+
 .fa-headphones,
 .fa-code,
 .fa-file-text,
@@ -222,6 +227,10 @@ $on-laptop:        800px;
     @include media-query($on-palm) {
     display: none;
   } 
+}
+
+.fa-youtube-play {
+  padding-right: 10px;
 }
 
 /*---Player Styles-------------------------------------*/
@@ -253,10 +262,6 @@ $on-laptop:        800px;
   margin-left: 290px; 
 }
 
-.jp-playlist {
-  display: none; 
-}
-
 .fa-volume-up {
   margin-left: 210px; 
 }
@@ -276,7 +281,7 @@ $on-laptop:        800px;
 
 .jp-duration {
   float: right;
-  margin: 15px; 
+  margin: 10px; 
   font-size: 12px;
 }
 
@@ -290,6 +295,15 @@ $on-laptop:        800px;
   .source:before {
     content: "StoryCorps | NPR";
   }
+  a {
+    font-weight: 400;
+    outline: none;
+  }
+}
+
+.jp-playlist-current {
+  opacity: .6;
+  outline: none;
 }
 
 .all-controls {
