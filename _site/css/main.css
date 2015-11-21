@@ -727,20 +727,26 @@ pre {
   font-size: 12px; }
 
 .jp-playlist {
-  display: inherit; }
+  display: inherit;
+  margin-top: 20px; }
   .jp-playlist ul {
     list-style: none;
     font-size: 20px;
     margin: 0; }
+  .jp-playlist li {
+    border-top: none;
+    border-bottom: 1px solid #ccc; }
   .jp-playlist .source:before {
     content: "StoryCorps | NPR"; }
   .jp-playlist a {
     font-weight: 400;
     outline: none; }
 
-.jp-playlist-current {
+.jp-state-playing .jp-playlist-current {
   opacity: .6;
   outline: none; }
+  .jp-state-playing .jp-playlist-current h4 {
+    color: #8C3944; }
 
 .all-controls {
   position: absolute;
