@@ -247,6 +247,7 @@ $on-laptop:        800px;
 .jp-progress {
   width: 100%;
   height: 10px;
+  background: rgba(0,0,0,.5);
 }
 
 .jp-play-bar {
@@ -259,7 +260,7 @@ $on-laptop:        800px;
     width: 100%;
     left: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
  }
 
 .fa-fast-forward {
@@ -285,8 +286,9 @@ $on-laptop:        800px;
 
 .jp-duration {
   float: right;
-  margin: 10px; 
-  font-size: 12px;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .jp-playlist {
