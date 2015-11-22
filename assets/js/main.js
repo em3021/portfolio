@@ -8,6 +8,67 @@ if ($(this).scrollTop() > 1){
   }
 });
 
+
+
+// $(window).scroll(function() {
+//   var lastScrollTop = 0;
+//   var delta = 5;
+//   var navbarHeight = $("header").outerHeight();
+//   var st = $(this).scrollTop();
+
+//   if (Math.abs(0 — st) <= delta)
+//   return;
+
+// if (st > lastScrollTop && st > navbarHeight){  
+//     $('.site-header').hide();
+//   }
+//   else {
+//     if (st + $(window).height() < $(document).height()){  
+//       $('.site-header').show();
+//     }
+//   }
+//   lastScrollTop = st;
+// });
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.site-header').hide();
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('.site-header').show();
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
 // Hammertime.js --------------/
 
 // $.mobile.autoInitializePage = false;
