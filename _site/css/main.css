@@ -90,7 +90,7 @@ a {
           color: darken($brand-color, 15%);
       }*/ }
   a:hover {
-    opacity: .6; }
+    opacity: .5; }
 
 /**
  * Blockquotes
@@ -736,6 +736,8 @@ pre {
   .jp-playlist li {
     border-top: none;
     border-bottom: 1px solid #ccc; }
+  .jp-playlist li:last-child {
+    border: none; }
   .jp-playlist .source:before {
     content: "StoryCorps | NPR"; }
   .jp-playlist a {

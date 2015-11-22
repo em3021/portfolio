@@ -297,6 +297,9 @@ $on-laptop:        800px;
     border-top: none;
     border-bottom: 1px solid #ccc;
   }
+  li:last-child {
+        border: none;
+    }
   .source:before {
     content: "StoryCorps | NPR";
   }
