@@ -331,8 +331,7 @@ pre {
 .post {
   margin: 80px auto;
   background-color: white;
-  padding: 70px;
-  border: 1px solid #dddddd; }
+  padding: 70px; }
   @media screen and (max-width: 600px) {
     .post {
       margin: 70px auto;
@@ -708,7 +707,8 @@ pre {
   width: 100%;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); }
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1; }
 
 .fa-fast-forward {
   margin-left: 290px; }
