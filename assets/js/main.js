@@ -66,6 +66,15 @@ function hasScrolled() {
         }
     }
     
+    if (st + $(window).height() == $(document).height()){
+        $('.jp-gui').hide();
+    }
+    else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('.jp-gui').show();
+        }
+    }
     lastScrollTop = st;
 }
 
