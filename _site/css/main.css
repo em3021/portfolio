@@ -174,9 +174,8 @@ pre {
 .site-header {
   min-height: 50px;
   position: fixed;
-  background: white;
+  background: #BBBAB3;
   width: 100%;
-  border-bottom: 1px solid #eee;
   top: 0;
   height: auto;
   z-index: 1;
@@ -187,7 +186,7 @@ pre {
     width: 100%; }
 
 .site-title {
-  color: #111;
+  color: white;
   margin: 10px;
   font-size: 20px;
   letter-spacing: 1px;
@@ -216,7 +215,7 @@ pre {
     text-transform: uppercase;
     letter-spacing: 1px; }
   .site-nav .page-link {
-    color: #111;
+    color: white;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -316,7 +315,7 @@ pre {
  */
 .page-content {
   padding: 30px 0;
-  background-color: whitesmoke;
+  background-color: white;
   color: #111;
   min-height: 100%; }
 
@@ -331,8 +330,7 @@ pre {
 .post {
   margin: 80px auto;
   background-color: white;
-  padding: 70px;
-  border: 1px solid #eee; }
+  padding: 70px; }
   @media screen and (max-width: 600px) {
     .post {
       margin: 70px auto;
@@ -570,7 +568,6 @@ pre {
   position: relative;
   border: none;
   font-weight: 400;
-  background: rgba(0, 0, 0, 0.25);
   transition: all .25s ease-in-out; }
 
 .home-header .wrapper {
@@ -580,8 +577,8 @@ pre {
   position: relative; }
 
 .home-header .background {
-  background: url(/portfolio/assets/img/castle-village.jpg);
-  background-size: 100%;
+  background: url(/portfolio/assets/img/landing.jpg) 0px -80px no-repeat;
+  background-size: cover;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -590,7 +587,7 @@ pre {
 .home-header .site-title {
   color: white;
   margin: 10px;
-  font-size: 80px;
+  font-size: 70px;
   letter-spacing: 1px;
   margin-bottom: 0;
   float: left;
@@ -601,8 +598,9 @@ pre {
 
 .home-header .site-nav {
   position: relative;
-  top: 60px;
-  display: none; }
+  top: 60px; }
+  .home-header .site-nav .page-link {
+    color: white; }
   @media screen and (max-width: 600px) {
     .home-header .site-nav {
       font-size: 12px; } }
@@ -610,19 +608,16 @@ pre {
 .sticky-nav {
   min-height: 50px;
   position: fixed;
-  background: white;
+  background: #BBBAB3;
   width: 100%;
-  border-bottom: 1px solid #eee;
   top: 0;
   height: auto; }
   .sticky-nav .site-title {
-    font-size: 20px;
-    color: #111; }
+    font-size: 20px; }
   .sticky-nav .background {
     display: none; }
   .sticky-nav .site-nav {
-    top: 14px;
-    display: inline-block; }
+    top: 14px; }
 
 /*#home {
   background: none;
