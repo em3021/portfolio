@@ -30,6 +30,8 @@ $pink: #E1565E;
 $main-red: #B7172D;
 $main-blue: #130B39;
 $grey-selected: #fafafa;
+$main-pink: #F46F6C;
+;
 
 // Width of the content area
 $content-width:    800px;
@@ -79,12 +81,13 @@ $on-laptop:        800px;
 }
 
 .home-header {
-    height: 95%;
+    height: 100%;
     // border-top: 2px solid #3C070E;
     min-height: 56px;
     position: relative;
     border: none;
     font-weight: 400;
+    background: rgba(0,0,0,.25);
     transition: all .25s ease-in-out;
     @include media-query($on-palm) {
         // height: 130px;
@@ -98,10 +101,19 @@ $on-laptop:        800px;
         position: relative;
     }
 
+.home-header .background {
+    background: url({{ site.baseurl }}/assets/img/castle-village.jpg);
+    background-size: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .home-header .site-title {
-    color: $text-color;
+    color: white;
     margin: 10px;
-    font-size: 60px;
+    font-size: 80px;
     letter-spacing: 1px;
     margin-bottom: 0;
     float: left;
@@ -114,7 +126,7 @@ $on-laptop:        800px;
 .home-header .site-nav {
     position: relative;
     top: 60px;
-    display: inline-block;
+    display: none;
      @include media-query($on-palm) {
         font-size: 12px;
       }
@@ -125,14 +137,19 @@ $on-laptop:        800px;
     position: fixed;
     background: white;
     width: 100%;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
     top: 0;
     height: auto;
     .site-title {
       font-size: 20px;
+      color: $text-color;
+    }
+    .background {
+      display: none;
     }
     .site-nav {
       top: 14px;
+      display: inline-block;
     }
 }
 
