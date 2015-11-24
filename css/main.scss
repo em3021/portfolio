@@ -1,0 +1,312 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: Meta OT, 'Lato', sans-serif;
+$base-font-size:   16px;
+$small-font-family: 'Source Sans Pro', sans-serif;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #F2EBEA;
+$brand-color:      #2a7ae2;
+
+$grey-color:   #33262C; 
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+$trello-blue: #0079bf;
+$trello-blue-dark: darken($trello-blue, 20%);
+$burnt-orange: #bf4600;
+$bright-red: #e73640;
+$dark-blue: rgb(25, 34, 54);
+$dark-red: #36011D;
+$red: #440514;
+$pink: #E1565E;
+$main-red: #B7172D;
+$main-blue: #130B39;
+$grey-selected: #fafafa;
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "mixins"
+;
+
+
+.site-nav .trigger a:hover {
+        // color: $text-color;
+        // background-color: white;
+        opacity: .6;
+        .fa { 
+          opacity: 1;
+          color: white;
+        }
+}
+
+.site-title:hover {
+        opacity: .75;
+        // color: #3C070E;
+}
+
+.home-header {
+    height: 95%;
+    // border-top: 2px solid #3C070E;
+    min-height: 56px;
+    position: relative;
+    border: none;
+    font-weight: 400;
+    transition: all .25s ease-in-out;
+    @include media-query($on-palm) {
+        // height: 130px;
+    }
+}
+
+.home-header .wrapper {
+        padding: 0;
+        width: 100%;
+        top: 30%;
+        position: relative;
+    }
+
+.home-header .site-title {
+    color: $text-color;
+    margin: 10px;
+    font-size: 60px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    float: left;
+    padding-right: 70px;
+    @include media-query($on-palm) {
+        padding-right: 0;
+    }
+}
+
+.home-header .site-nav {
+    position: relative;
+    top: 60px;
+    display: inline-block;
+     @include media-query($on-palm) {
+        font-size: 12px;
+      }
+    }
+
+.sticky-nav {
+    min-height: 50px;
+    position: fixed;
+    background: white;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    top: 0;
+    height: auto;
+    .site-title {
+      font-size: 20px;
+    }
+    .site-nav {
+      top: 14px;
+    }
+}
+
+/*#home {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 20px;
+  line-height: 2;
+}*/
+
+#home img {
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+#home.post p {
+  padding-top: 10px;
+}
+
+#home.post .credit {
+  font-size: 12px;
+  text-align: right;
+  color: $text-color;
+}
+
+.ui-page { -webkit-backface-visibility: hidden; }
+
+.resume {
+        margin-left: 0;
+
+        h2 {
+            font-size: 22px;
+            border-top: 1px solid #dddddd;
+            padding: 10px 0;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        h4, h5 {
+            font-size: $small-font-size;
+            font-weight: 100;
+            color: #999;
+        }
+        h5 {
+            float: right;
+            
+        }
+        li {
+            font-family: $small-font-family;
+            margin: 10px;
+            margin-left:  50px; 
+            font-size: $base-font-size;
+            @include media-query($on-palm) {
+                margin-left: 15px;
+            }
+        }
+        a {
+            color: $text-color;
+            font-style: bold;
+        }
+        
+}
+.fa-headphones,
+.fa-code,
+.fa-file-text,
+.fa-paragraph {
+  color: $text-color;
+  opacity: .5;
+/*  &:hover {
+    opacity: 1;
+  }*/
+}
+
+.fa-2x {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.fa-download {
+    float: right;
+    padding: 15px 0;
+    @include media-query($on-palm) {
+    display: none;
+  } 
+}
+
+/*---Player Styles-------------------------------------*/
+
+.player {
+
+ }
+
+.jp-audio {
+  width: 100%;
+  position: relative; 
+}
+
+.jp-progress {
+  width: 100%;
+  height: 5px;
+  border-top: 1px solid #ddd;
+}
+
+.jp-play-bar {
+  background-color: #8C3944;
+  height: 5px; 
+}
+
+.jp-gui {
+ }
+
+.fa-fast-forward {
+  margin-left: 290px; 
+}
+
+.jp-playlist {
+  display: none; 
+}
+
+.fa-volume-up {
+  margin-left: 210px; 
+}
+.jp-volume-bar {
+  height: 5px;
+  width: 50%;
+  background-color: #b04856;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 35px;
+  margin-bottom: 5px; 
+}
+
+.jp-current-time {
+  display: none;
+}
+
+.jp-duration {
+  float: right;
+  margin: 15px; 
+  font-size: 12px;
+}
+
+.all-controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: none; 
+}
+
+.fa-play-circle-o {
+  color: #8C3944;
+  position: absolute;
+  top: 36%;
+  right: 40%;
+  display: inherit; 
+}
+
+.fa-pause {
+  display: none; 
+}
+
+.jp-volume-max {
+}
+
+
+/**/
+
+
+
+
+
+
+
