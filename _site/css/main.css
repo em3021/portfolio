@@ -244,14 +244,13 @@ pre {
       .site-nav .trigger {
         float: left; }
       .site-nav .trigger a {
-        border: none; }
+        border: none;
+        padding: 0; }
       .site-nav:hover .trigger {
         display: block;
         padding-bottom: 5px; }
       .site-nav .page-link {
-        display: inline;
-        padding: 5px 10px;
-        margin-left: 10px; } }
+        display: inline; } }
 
 /**
  * Site footer
@@ -565,12 +564,12 @@ pre {
   opacity: .75; }
 
 .home-header {
-  height: 100%;
+  height: 90%;
   min-height: 56px;
   position: relative;
   border: none;
   font-weight: 400;
-  margin: 30px;
+  margin: 2.5%;
   transition: all .25s ease-in-out; }
   @media screen and (max-width: 600px) {
     .home-header {
@@ -584,7 +583,7 @@ pre {
   height: 20%; }
 
 .home-header .background {
-  background: url(/portfolio/assets/img/cloisters-2.jpg) 0px 150% no-repeat;
+  background: url(/portfolio/assets/img/cloisters-2.jpg) 0px 100% no-repeat;
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -738,6 +737,9 @@ pre {
   bottom: 0;
   background: rgba(0, 0, 0, 0.25);
   z-index: 1; }
+  @media screen and (max-width: 600px) {
+    .jp-gui {
+      background: #F7F7F7; } }
 
 .fa-fast-forward {
   margin-left: 290px; }

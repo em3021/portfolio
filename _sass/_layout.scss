@@ -6,7 +6,7 @@
 .site-header {
     min-height: 50px;
     position: fixed;
-    background: #F7F7F7;
+    background: $nav-grey;
     width: 100%;
     border-bottom: 1px solid #eee;
     top: 0;
@@ -100,6 +100,7 @@
 
         .trigger a {
             border: none;
+            padding: 0;
         }
 
         &:hover .trigger {
@@ -109,8 +110,6 @@
 
         .page-link {
             display: inline;
-            padding: 5px 10px;
-            margin-left: 10px;
         }
 
     }
