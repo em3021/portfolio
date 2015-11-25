@@ -782,9 +782,9 @@ pre {
   .jp-state-playing .jp-playlist-current h4 {
     color: #8C3944; }
 
-.jp-state-playing div.jp-type-playlist .jp-play:focus .fa-play {
+.jp-state-playing div.jp-type-playlist .fa-play {
   display: none; }
-.jp-state-playing div.jp-type-playlist .jp-play:focus .fa-pause {
+.jp-state-playing div.jp-type-playlist .fa-pause {
   display: inherit; }
 
 .jp-controls button {
