@@ -352,6 +352,14 @@ $on-laptop:        800px;
     color: #8C3944;
   }
 }
+.jp-state-playing div.jp-type-playlist .jp-play:focus {
+  .fa-play {
+    display: none;
+  }
+  .fa-pause {
+    display: inherit;
+  }
+}
 
 .jp-controls button {
   // color: #440514;
