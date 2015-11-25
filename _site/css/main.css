@@ -592,7 +592,7 @@ pre {
   z-index: -1; }
   @media screen and (max-width: 600px) {
     .home-header .background {
-      background-position: -330px -20px; } }
+      background-position: -390px -20px; } }
 
 .home-header .site-title {
   color: white;

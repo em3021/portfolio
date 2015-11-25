@@ -114,7 +114,7 @@ $on-laptop:        800px;
     height: 100%;
     z-index: -1;
     @include media-query($on-palm) {
-        background-position: -330px -20px;
+        background-position: -390px -20px;
     }
 }
 
