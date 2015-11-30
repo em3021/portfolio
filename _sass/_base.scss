@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
 
 /*    &:visited {
@@ -121,7 +121,7 @@ a {
     }*/
 
     &:hover {
-        color: $text-color;
+        opacity: .5;
         
     }
 }
@@ -192,6 +192,7 @@ pre {
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
+        width: 90%;
     }
     @include media-query($on-palm) {
             width: 90%;
