@@ -680,8 +680,8 @@ pre {
     margin-bottom: 5px; }
   .resume h4, .resume h5 {
     font-size: 14px;
-    font-weight: 100;
-    color: #999; }
+    font-weight: 200;
+    color: grey; }
   .resume h5 {
     float: right; }
   .resume li {
