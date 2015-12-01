@@ -188,6 +188,11 @@ $on-laptop:        800px;
 #home img {
     padding-top: 20px;
     border-top: 1px solid #ccc;
+    width: 300px;
+    margin-left: 20%;
+     @include media-query($on-palm) {
+                margin-left: 0;
+            }
 }
 
 #home.post p {
@@ -198,6 +203,10 @@ $on-laptop:        800px;
   font-size: 12px;
   text-align: right;
   color: $text-color;
+  margin-right: 20%;
+   @include media-query($on-palm) {
+                margin-right: 0;
+            }
 }
 
 

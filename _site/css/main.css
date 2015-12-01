@@ -654,7 +654,12 @@ pre {
 }*/
 #home img {
   padding-top: 20px;
-  border-top: 1px solid #ccc; }
+  border-top: 1px solid #ccc;
+  width: 300px;
+  margin-left: 20%; }
+  @media screen and (max-width: 600px) {
+    #home img {
+      margin-left: 0; } }
 
 #home.post p {
   padding-top: 10px; }
@@ -662,7 +667,11 @@ pre {
 #home.post .credit {
   font-size: 12px;
   text-align: right;
-  color: #111; }
+  color: #111;
+  margin-right: 20%; }
+  @media screen and (max-width: 600px) {
+    #home.post .credit {
+      margin-right: 0; } }
 
 .ui-page {
   -webkit-backface-visibility: hidden; }
