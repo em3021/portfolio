@@ -314,7 +314,6 @@ pre {
  * Page content
  */
 .page-content {
-  padding: 30px 0;
   background-color: white;
   color: #111;
   min-height: 100%; }
@@ -570,7 +569,6 @@ pre {
       margin: 10px; } }
 
 .home-header .wrapper {
-  padding: 10px;
   width: 100%;
   top: 30%;
   position: relative;
