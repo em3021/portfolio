@@ -176,6 +176,7 @@ pre {
   position: fixed;
   background: white;
   width: 100%;
+  border-bottom: 1px solid #eee;
   top: 0;
   height: auto;
   z-index: 1;
@@ -583,11 +584,11 @@ pre {
   z-index: -1; }
   @media screen and (max-width: 600px) {
     .home-header .background {
-      background-position: -330px -20px; } }
+      background-position: -260px -20px; } }
 
 .home-header .site-title {
   color: white;
-  margin: 10px;
+  margin: 10px 5px 10px 0;
   font-size: 70px;
   letter-spacing: 1px;
   margin-bottom: 0;
@@ -605,7 +606,6 @@ pre {
     color: white; }
   @media screen and (max-width: 600px) {
     .home-header .site-nav {
-      font-size: 12px;
       top: 0; } }
 
 .sticky-nav {
@@ -624,9 +624,9 @@ pre {
   .sticky-nav .background {
     display: none; }
   .sticky-nav .wrapper {
-    padding: 0; }
+    padding: 0 10px; }
   .sticky-nav .site-nav {
-    top: 14px; }
+    top: 15px; }
     .sticky-nav .site-nav .page-link {
       color: #111; }
       @media screen and (max-width: 600px) {
