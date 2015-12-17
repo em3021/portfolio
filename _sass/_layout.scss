@@ -4,6 +4,10 @@
  * Site header
  */
  
+header {
+    transition: all .08s ease-in-out; 
+} 
+
 .site-header {
     min-height: 50px;
     position: fixed;

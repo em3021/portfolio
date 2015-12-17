@@ -1,6 +1,6 @@
 
 $(window).scroll(function() {
-if ($(this).scrollTop() > 1){  
+if ($(this).scrollTop() > 50){  
     $('.home-header').addClass("sticky-nav");
   }
   else{
