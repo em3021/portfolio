@@ -172,7 +172,7 @@ pre {
  * Site header
  */
 header {
-  transition: all .15s ease-in-out; }
+  transition: all .08s ease-in-out; }
 
 .site-header {
   min-height: 50px;
@@ -577,6 +577,9 @@ header {
   top: 30%;
   position: relative;
   height: 20%; }
+  @media screen and (max-width: 600px) {
+    .home-header .wrapper {
+      width: auto; } }
 
 .home-header .background {
   background: url(/portfolio/assets/img/cloisters-2.jpg) 0px 100% no-repeat;
@@ -587,7 +590,8 @@ header {
   z-index: -1; }
   @media screen and (max-width: 600px) {
     .home-header .background {
-      background-position: -260px -20px; } }
+      background: url(/portfolio/assets/img/cloisters-mobile.jpg) 50% no-repeat;
+      background-size: auto 100%; } }
 
 .home-header .site-title {
   color: white;
