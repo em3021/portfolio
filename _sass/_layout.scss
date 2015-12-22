@@ -42,6 +42,7 @@ header {
     margin-bottom: 0;
     float: left;
     padding-right: 70px;
+    text-transform: uppercase;
      @include media-query($on-palm) {
         padding-right: 0;
     }

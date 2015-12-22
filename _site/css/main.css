@@ -196,7 +196,8 @@ header {
   letter-spacing: 1px;
   margin-bottom: 0;
   float: left;
-  padding-right: 70px; }
+  padding-right: 70px;
+  text-transform: uppercase; }
   @media screen and (max-width: 600px) {
     .site-title {
       padding-right: 0; } }
