@@ -158,10 +158,7 @@ pre {
   margin-left: 10%;
   margin-top: 125px;
   font-size: 13px;
-  /* position: fixed; */
-  /* background: #8A4C4C; */
-  color: #111;
-  padding: 0 10px; }
+  color: #111; }
   @media screen and (max-width: 600px) {
     .sidebar {
       display: none; } }
