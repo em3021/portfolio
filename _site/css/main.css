@@ -605,7 +605,8 @@ header .site-nav .about-link {
       margin: 15px;
       padding: 15px;
       font-size: 20px;
-      line-height: 1.25; } }
+      line-height: 1.25;
+      top: 15%; } }
 
 .home-header .background {
   background: url(/portfolio/assets/img/cloisters-2.jpg) 0px 100% no-repeat;
