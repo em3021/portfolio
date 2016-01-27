@@ -35,14 +35,14 @@ header {
 
 
 .site-title {
+    font-family: "Bree Serif", serif;
     color: $text-color;
     margin: 10px 5px 10px 0;
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     margin-bottom: 0;
     float: left;
-    padding-right: 70px;
-    text-transform: uppercase;
+    padding-right: $spacing-unit;
      @include media-query($on-palm) {
         padding-right: 0;
     }
@@ -56,19 +56,12 @@ header {
         
     }
     .trigger a {
-            // border: 2px solid white;
             padding: 5px;
-            // border-radius: 1px;
             // transition: all .25s ease-in-out;
             font-size: 12px;
-            text-transform: uppercase;
             letter-spacing: 1px;
     }
 
-    /*.menu-icon {
-        display: none;
-    }
-*/
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
@@ -82,24 +75,6 @@ header {
 
     @include media-query($on-palm) {
         position: relative;
-        /*.menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }*/
 
         .trigger {
             float: left;
@@ -128,6 +103,20 @@ header {
     }
 }
 
+#audio .site-nav .trigger .audio-link,
+#resume .site-nav .trigger .resume-link, 
+#writing .site-nav .trigger .writing-link,
+#design .site-nav .trigger .design-link,
+#about .site-nav .trigger .about-link {
+    text-decoration: underline;
+}
+
+header .site-nav .about-link {
+    display: none;
+    @include media-query($on-palm) {
+            display: inline-block;
+        }
+    }
 
 
 /**
@@ -168,6 +157,10 @@ header {
     float: left;
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
+    p {
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
 }
 
 .footer-col-1 {
@@ -260,7 +253,7 @@ header {
         }
     }
  .dek {
-        font-size: 14px;
+        font-size: 16px;
         margin: 10px 0 30px 30px;
         @include media-query($on-palm) {
             margin-left: 0;
@@ -295,7 +288,6 @@ header {
     letter-spacing: 1px;
     font-weight: bold;
     line-height: 1;
-    text-transform: uppercase;
     /*border-top: 3px solid $text-color;*/
 }
 

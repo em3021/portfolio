@@ -66,46 +66,46 @@ $on-laptop:        800px;
 
 
 .site-nav .trigger a:hover {
-        // color: $text-color;
-        // background-color: white;
-        opacity: .6;
-        .fa { 
-          opacity: 1;
-          color: white;
-        }
+        opacity: 1;
+        text-decoration: underline;
 }
 
-.site-title:hover {
-        opacity: .75;
-        // color: #3C070E;
-}
 
 .home-header {
     height: 90%;
-    // border-top: 2px solid #3C070E;
     min-height: 56px;
     position: relative;
     border: none;
-    font-weight: 400;
+    font-weight: 100;
     margin: 2.5%;
-    // box-shadow: inset 180px 30px 163px 70px rgba(0,0,0,.75);
-    // background: rgba(0,0,0,.25);
-    // transition: all .25s ease-in-out;
-    @include media-query($on-palm) {
-        // height: 130px;
+    @include media-query($on-palm) {    
         margin: 10px;
     }
 }
 
 .home-header .wrapper {
-        // padding: 10px;
-        width: 100%;
-        top: 30%;
+        width: 46%;
+        margin-left: 17%;
+        top: 25%;
         position: relative;
-        // background: rgba(0,0,0,.4);
-        height: 20%;
+        font-family: "Source Sans Pro", sans-serif;
+        background: rgba(4, 3, 1, 0.38);
+        padding: 25px;
+        color: #C7BDB0;
+        font-size: 26px;
+        a {
+          color: #C7BDB0;
+          // text-decoration: underline;
+        }
+        a:hover {
+          color: white;
+        }
         @include media-query($on-palm) { 
             width: auto;
+            margin: 15px;
+            padding: 15px;
+            font-size: 20px;
+            line-height: 1.25;
         }
     }
 
@@ -122,14 +122,17 @@ $on-laptop:        800px;
     }
 }
 
-.home-header .site-title {
+.home-header #site-title {
+    font-family: 'Bree Serif', serif;
     color: white;
     margin: 10px 5px 10px 0;
-    font-size: 70px;
+    font-size: 56px;
     letter-spacing: 1px;
     margin-bottom: 0;
-    float: left;
-    padding-right: 70px;
+    float: none;
+    text-decoration: none;
+    line-height: 1;
+    text-rendering: geometricPrecision;
     @include media-query($on-palm) {
         padding-right: 0;
         font-size: 50px;
@@ -137,14 +140,16 @@ $on-laptop:        800px;
 }
 
 .home-header .site-nav {
+    top: 0;
+    display: block;
     position: relative;
-    top: 60px;
     .page-link {
         color: white;
+        font-size: 16px;
       }
      @include media-query($on-palm) {
+        margin-top: 10px;
         
-        top: 0;
       }
     }
 
@@ -256,20 +261,10 @@ $on-laptop:        800px;
         
 }
 
-/*#design a:hover {
-  opacity: 1;
-}*/
+.resume h2:first-of-type {
+          margin-top: 0px;
+        }
 
-.fa-headphones,
-.fa-code,
-.fa-file-text,
-.fa-paragraph {
-  color: $text-color;
-  opacity: .5;
-/*  &:hover {
-    opacity: 1;
-  }*/
-}
 
 .fa-2x {
     font-size: 1.5em;
@@ -369,10 +364,16 @@ $on-laptop:        800px;
 }
 
 .jp-state-playing .jp-playlist-current {
-  opacity: .6;
   outline: none;
-  h4 {
+  h4:after {
+    float: right;
+    content: "Now Playing";
+    font-style: italic;
+    cursor: default;
     color: #8C3944;
+  }
+  h4 {
+    
   }
 }
 .jp-state-playing div.jp-type-playlist {

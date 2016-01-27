@@ -21,7 +21,8 @@ body {
   font-weight: 300;
   background-color: white;
   -webkit-text-size-adjust: 100%;
-  height: 100%; }
+  height: 100%;
+  text-rendering: optimizeLegibility; }
 
 .section {
   border-top: 1px solid white; }
@@ -149,6 +150,30 @@ pre {
       width: 90%; } }
 
 /**
+ * Sidebar
+ */
+.sidebar {
+  width: 15%;
+  float: left;
+  margin-left: 10%;
+  margin-top: 125px;
+  font-size: 13px;
+  /* position: fixed; */
+  /* background: #8A4C4C; */
+  color: #111;
+  padding: 0 10px; }
+  @media screen and (max-width: 600px) {
+    .sidebar {
+      display: none; } }
+  .sidebar .credit {
+    margin-top: 5px;
+    font-size: 11px; }
+  .sidebar .post-header {
+    margin: 15px 0; }
+    .sidebar .post-header .post-title {
+      font-size: 16px; }
+
+/**
  * Clearfix
  */
 .wrapper:after, .footer-col-wrapper:after {
@@ -190,14 +215,14 @@ header {
     width: 100%; }
 
 .site-title {
+  font-family: "Bree Serif", serif;
   color: #111;
   margin: 10px 5px 10px 0;
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   margin-bottom: 0;
   float: left;
-  padding-right: 70px;
-  text-transform: uppercase; }
+  padding-right: 30px; }
   @media screen and (max-width: 600px) {
     .site-title {
       padding-right: 0; } }
@@ -205,15 +230,10 @@ header {
 .site-nav {
   position: relative;
   top: 15px;
-  display: inline-block;
-    /*.menu-icon {
-        display: none;
-    }
-*/ }
+  display: inline-block; }
   .site-nav .trigger a {
     padding: 5px;
     font-size: 12px;
-    text-transform: uppercase;
     letter-spacing: 1px; }
   .site-nav .page-link {
     color: #111;
@@ -222,25 +242,7 @@ header {
       margin-left: 20px; }
   @media screen and (max-width: 600px) {
     .site-nav {
-      position: relative;
-        /*.menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }*/ }
+      position: relative; }
       .site-nav .trigger {
         float: left; }
       .site-nav .trigger a {
@@ -255,6 +257,19 @@ header {
         display: inline; }
         .site-nav .page-link:not(:first-child) {
           margin-left: 5px; } }
+
+#audio .site-nav .trigger .audio-link,
+#resume .site-nav .trigger .resume-link,
+#writing .site-nav .trigger .writing-link,
+#design .site-nav .trigger .design-link,
+#about .site-nav .trigger .about-link {
+  text-decoration: underline; }
+
+header .site-nav .about-link {
+  display: none; }
+  @media screen and (max-width: 600px) {
+    header .site-nav .about-link {
+      display: inline-block; } }
 
 /**
  * Site footer
@@ -288,6 +303,9 @@ header {
   float: left;
   margin-bottom: 15px;
   padding-left: 15px; }
+  .footer-col p {
+    font-weight: 400;
+    margin-bottom: 10px; }
 
 .footer-col-1 {
   width: -webkit-calc(35% - (30px / 2));
@@ -356,7 +374,7 @@ header {
       .post-list li {
         padding: 10px 0; } }
   .post-list .dek {
-    font-size: 14px;
+    font-size: 16px;
     margin: 10px 0 30px 30px; }
     @media screen and (max-width: 600px) {
       .post-list .dek {
@@ -384,7 +402,6 @@ header {
   letter-spacing: 1px;
   font-weight: bold;
   line-height: 1;
-  text-transform: uppercase;
   /*border-top: 3px solid $text-color;*/ }
 
 .post-content {
@@ -554,33 +571,41 @@ header {
 
 /*- Sass mixins --------------------------------------------------------------*/
 .site-nav .trigger a:hover {
-  opacity: .6; }
-  .site-nav .trigger a:hover .fa {
-    opacity: 1;
-    color: white; }
-
-.site-title:hover {
-  opacity: .75; }
+  opacity: 1;
+  text-decoration: underline; }
 
 .home-header {
   height: 90%;
   min-height: 56px;
   position: relative;
   border: none;
-  font-weight: 400;
+  font-weight: 100;
   margin: 2.5%; }
   @media screen and (max-width: 600px) {
     .home-header {
       margin: 10px; } }
 
 .home-header .wrapper {
-  width: 100%;
-  top: 30%;
+  width: 46%;
+  margin-left: 17%;
+  top: 25%;
   position: relative;
-  height: 20%; }
+  font-family: "Source Sans Pro", sans-serif;
+  background: rgba(4, 3, 1, 0.38);
+  padding: 25px;
+  color: #C7BDB0;
+  font-size: 26px; }
+  .home-header .wrapper a {
+    color: #C7BDB0; }
+  .home-header .wrapper a:hover {
+    color: white; }
   @media screen and (max-width: 600px) {
     .home-header .wrapper {
-      width: auto; } }
+      width: auto;
+      margin: 15px;
+      padding: 15px;
+      font-size: 20px;
+      line-height: 1.25; } }
 
 .home-header .background {
   background: url(/portfolio/assets/img/cloisters-2.jpg) 0px 100% no-repeat;
@@ -594,27 +619,32 @@ header {
       background: url(/portfolio/assets/img/cloisters-mobile.jpg) 50% no-repeat;
       background-size: auto 100%; } }
 
-.home-header .site-title {
+.home-header #site-title {
+  font-family: 'Bree Serif', serif;
   color: white;
   margin: 10px 5px 10px 0;
-  font-size: 70px;
+  font-size: 56px;
   letter-spacing: 1px;
   margin-bottom: 0;
-  float: left;
-  padding-right: 70px; }
+  float: none;
+  text-decoration: none;
+  line-height: 1;
+  text-rendering: geometricPrecision; }
   @media screen and (max-width: 600px) {
-    .home-header .site-title {
+    .home-header #site-title {
       padding-right: 0;
       font-size: 50px; } }
 
 .home-header .site-nav {
-  position: relative;
-  top: 60px; }
+  top: 0;
+  display: block;
+  position: relative; }
   .home-header .site-nav .page-link {
-    color: white; }
+    color: white;
+    font-size: 16px; }
   @media screen and (max-width: 600px) {
     .home-header .site-nav {
-      top: 0; } }
+      margin-top: 10px; } }
 
 .sticky-nav {
   min-height: 50px;
@@ -703,18 +733,8 @@ header {
     color: #111;
     font-style: bold; }
 
-/*#design a:hover {
-  opacity: 1;
-}*/
-.fa-headphones,
-.fa-code,
-.fa-file-text,
-.fa-paragraph {
-  color: #111;
-  opacity: .5;
-  /*  &:hover {
-      opacity: 1;
-    }*/ }
+.resume h2:first-of-type {
+  margin-top: 0px; }
 
 .fa-2x {
   font-size: 1.5em;
@@ -794,9 +814,12 @@ header {
     outline: none; }
 
 .jp-state-playing .jp-playlist-current {
-  opacity: .6;
   outline: none; }
-  .jp-state-playing .jp-playlist-current h4 {
+  .jp-state-playing .jp-playlist-current h4:after {
+    float: right;
+    content: "Now Playing";
+    font-style: italic;
+    cursor: default;
     color: #8C3944; }
 
 .jp-state-playing div.jp-type-playlist .fa-play {

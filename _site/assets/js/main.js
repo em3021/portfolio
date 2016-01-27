@@ -1,12 +1,14 @@
+$(document).ready(function(){
 
-$(window).scroll(function() {
-if ($(this).scrollTop() > 50){  
-    $('.home-header').addClass("sticky-nav");
-  }
-  else{
-    $('.home-header').removeClass("sticky-nav");
-  }
-});
+
+// $(window).scroll(function() {
+// if ($(this).scrollTop() > 50){  
+//     $('.home-header').addClass("sticky-nav");
+//   }
+//   else{
+//     $('.home-header').removeClass("sticky-nav");
+//   }
+// });
 
 
 
@@ -55,15 +57,15 @@ function hasScrolled() {
     
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('.site-header').hide();
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('.site-header').show();
-        }
-    }
+    // if (st > lastScrollTop && st > navbarHeight){
+    //     // Scroll Down
+    //     $('.site-header').hide();
+    // } else {
+    //     // Scroll Up
+    //     if(st + $(window).height() < $(document).height()) {
+    //         $('.site-header').show();
+    //     }
+    // }
     
     if (st + $(window).height() == $(document).height()){
         $('.jp-gui').hide();
@@ -110,7 +112,7 @@ function hasScrolled() {
 
 
 
-$(document).ready(function(){
+
 
   new jPlayerPlaylist({
     jPlayer: "#jquery_jplayer_1",
@@ -122,7 +124,7 @@ $(document).ready(function(){
       ogg:"/portfolio/assets/audio/20150619_me_im_so_proud_to_have_you_as_a_daughter_01.ogg",
       intro:'“An immigrant from Haiti talks with his high-IQ daughter about his love for her, and why he works so hard to provide for her education.”',
       link:"http://www.npr.org/2015/06/19/415461277/im-so-proud-to-have-you-as-a-daughter",
-      dek:"I pitched this story as an intern at StoryCorps and co-facilitated the interview with Nicholas Heyward Sr. at StoryCorps/’ lower Manhattan recording booth."
+      dek:"I pitched this story as an intern at StoryCorps and co-facilitated the interview with Nicholas Heyward Sr. at StoryCorps’ lower Manhattan recording booth."
     },
     {
       title:"Dad Aches For Son Killed By Policeman 20 Years Ago",
@@ -168,5 +170,24 @@ $(document).ready(function(){
   });
 
 
+
+// $(window).scroll(function() {
+//     var sticky = function(index) {
+//         $('li').removeClass('active'), $('.' + index + '-nav').addClass('active');
+//       };
+//     $('.jp-playlist li').each(function(){
+//       var cur = $(this);
+//       var curTop = cur.offset().top;
+//       var curInx = cur.attr("id");
+//       var sidebarTop = $('.'+curInx+'-nav').offset().top - 60;
+//         if (sidebarTop > curTop) {
+//           sticky(curInx);
+//         }
+//     });
+//   });
+
+
 });
+
+
 
