@@ -33,7 +33,7 @@ button {
   button:hover {
     cursor: pointer;
     opacity: .5; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     button:hover {
       cursor: default;
       opacity: 1; } }
@@ -138,14 +138,14 @@ pre {
   padding-right: 30px;
   padding-left: 30px;
   width: 55%; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     .wrapper {
       max-width: -webkit-calc(800px - (30px));
       max-width: calc(800px - (30px));
       padding-right: 15px;
       padding-left: 15px;
       width: 90%; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .wrapper {
       width: 90%; } }
 
@@ -159,7 +159,7 @@ pre {
   margin-top: 125px;
   font-size: 13px;
   color: #111; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .sidebar {
       display: none; } }
   .sidebar .credit {
@@ -220,14 +220,14 @@ header {
   margin-bottom: 0;
   float: left;
   padding-right: 30px; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .site-title {
       padding-right: 0;
       margin-left: 10px; } }
 
 .site-title:after {
   content: "Emily Martinez"; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .site-title:after {
       content: "Emily M."; } }
 
@@ -237,7 +237,7 @@ header {
   display: inline-block;
   padding-left: 70px;
   margin: auto; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .site-nav {
       margin-left: 0px;
       padding-left: 0; } }
@@ -250,7 +250,7 @@ header {
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .site-nav {
       position: relative; }
       .site-nav .trigger {
@@ -277,7 +277,7 @@ header {
 
 header .site-nav .about-link {
   display: none; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     header .site-nav .about-link {
       display: inline-block; } }
 
@@ -287,7 +287,7 @@ header .site-nav .about-link {
 .site-footer {
   padding: 30px 0;
   background: #eee; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .site-footer {
       height: auto; } }
 
@@ -329,7 +329,7 @@ header .site-nav .about-link {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
@@ -338,7 +338,7 @@ header .site-nav .about-link {
   .footer-col-3 {
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
@@ -363,11 +363,11 @@ header .site-nav .about-link {
   margin: 80px auto;
   background-color: white;
   padding: 70px; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .post {
       margin: 70px auto;
       padding: 40px 0px; } }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     .post {
       padding: 50px 0px; } }
 
@@ -380,13 +380,13 @@ header .site-nav .about-link {
   .post-list li {
     border-top: 1px solid #dddddd;
     padding: 10px; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 480px) {
       .post-list li {
         padding: 10px 0; } }
   .post-list .dek {
     font-size: 16px;
     margin: 10px 0 30px 30px; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 480px) {
       .post-list .dek {
         margin-left: 0; } }
 
@@ -397,7 +397,7 @@ header .site-nav .about-link {
 .post-link {
   display: block;
   font-size: 22px; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .post-link {
       font-size: 20px; } }
 
@@ -418,12 +418,12 @@ header .site-nav .about-link {
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1024px) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 26px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1024px) {
       .post-content h3 {
         font-size: 22px; } }
   .post-content h4 {
@@ -434,7 +434,7 @@ header .site-nav .about-link {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #eee; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 480px) {
       .post-content img {
         border: none;
         border-radius: 0;
@@ -591,7 +591,7 @@ header .site-nav .about-link {
   border: none;
   font-weight: 100;
   margin: 2.5%; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .home-header {
       margin: 10px; } }
 
@@ -609,7 +609,7 @@ header .site-nav .about-link {
     color: #C7BDB0; }
   .home-header .wrapper a:hover {
     color: white; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .home-header .wrapper {
       width: auto;
       margin: 15px;
@@ -625,7 +625,10 @@ header .site-nav .about-link {
   width: 100%;
   height: 100%;
   z-index: -1; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
+    .home-header .background {
+      background-size: cover; } }
+  @media screen and (max-width: 480px) {
     .home-header .background {
       background: url(/portfolio/assets/img/cloisters-mobile.jpg) 50% no-repeat;
       background-size: auto 100%; } }
@@ -641,7 +644,7 @@ header .site-nav .about-link {
   text-decoration: none;
   line-height: 1;
   text-rendering: geometricPrecision; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .home-header #site-title {
       padding-right: 0;
       font-size: 50px; } }
@@ -654,7 +657,7 @@ header .site-nav .about-link {
   .home-header .site-nav .page-link {
     color: white;
     font-size: 16px; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .home-header .site-nav {
       margin-top: 10px; } }
 
@@ -679,7 +682,7 @@ header .site-nav .about-link {
     top: 15px; }
     .sticky-nav .site-nav .page-link {
       color: #111; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 480px) {
         .sticky-nav .site-nav .page-link {
           font-size: 11px;
           padding: 0;
@@ -697,7 +700,7 @@ header .site-nav .about-link {
   border-top: 1px solid #ccc;
   width: 300px;
   margin-left: 20%; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     #home img {
       margin-left: 0; } }
 
@@ -709,7 +712,7 @@ header .site-nav .about-link {
   text-align: right;
   color: #111;
   margin-right: 20%; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     #home.post .credit {
       margin-right: 0; } }
 
@@ -738,7 +741,7 @@ header .site-nav .about-link {
     margin: 10px;
     margin-left: 50px;
     font-size: 16px; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 480px) {
       .resume li {
         margin-left: 15px; } }
   .resume a {
@@ -755,7 +758,7 @@ header .site-nav .about-link {
 .fa-download {
   float: right;
   padding: 15px 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .fa-download {
       display: none; } }
 
@@ -784,7 +787,7 @@ header .site-nav .about-link {
   background: rgba(0, 0, 0, 0.25);
   z-index: 1;
   transition: all .15s ease-in-out; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .jp-gui {
       background: #F7F7F7; } }
 
