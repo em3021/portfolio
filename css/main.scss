@@ -303,7 +303,7 @@ $on-laptop:        1024px;
 .jp-progress {
   width: 100%;
   height: 10px;
-  background: rgba(0,0,0,.5);
+  background: #B3AFAF;
 }
 
 .jp-play-bar {
@@ -312,15 +312,26 @@ $on-laptop:        1024px;
 }
 
 .jp-gui {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.25);
+position: fixed;
+    right: 25%;
+    top: 0;
+    background: #F4EEEF;
     z-index: 1;
     transition: all .15s ease-in-out;
     @include media-query($on-palm) {
-      background: $nav-grey;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: initial;
+      width: 100%;
+      background: #F4EEEF;
+        .jp-time-holder, .jp-controls {
+            display: block;
+            }  
+        .jp-duration {
+            float: right;
+          }           
      }
  }
 
@@ -340,13 +351,20 @@ $on-laptop:        1024px;
   margin-left: 35px;
   margin-bottom: 5px; 
 }
-
+.jp-time-holder, .jp-controls {
+  display: inline-block;
+}
+.jp-controls {
+  float: left;
+  @include media-query($on-palm) {
+    float: none;
+  }
+}
 .jp-current-time {
   display: none;
 }
 
 .jp-duration {
-  float: right;
   padding: 10px 30px;
   font-size: 20px;
   font-weight: 400;
@@ -366,6 +384,9 @@ $on-laptop:        1024px;
   a {
     font-weight: 400;
     outline: none;
+  }
+  .jp-playlist-item:before {
+
   }
 }
 

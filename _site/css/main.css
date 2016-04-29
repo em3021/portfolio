@@ -773,7 +773,7 @@ header .site-nav .about-link {
 .jp-progress {
   width: 100%;
   height: 10px;
-  background: rgba(0, 0, 0, 0.5); }
+  background: #B3AFAF; }
 
 .jp-play-bar {
   background-color: #440514;
@@ -781,15 +781,24 @@ header .site-nav .about-link {
 
 .jp-gui {
   position: fixed;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.25);
+  right: 25%;
+  top: 0;
+  background: #F4EEEF;
   z-index: 1;
   transition: all .15s ease-in-out; }
   @media screen and (max-width: 480px) {
     .jp-gui {
-      background: #F7F7F7; } }
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: initial;
+      width: 100%;
+      background: #F4EEEF; }
+      .jp-gui .jp-time-holder, .jp-gui .jp-controls {
+        display: block; }
+      .jp-gui .jp-duration {
+        float: right; } }
 
 .fa-fast-forward {
   margin-left: 290px; }
@@ -806,11 +815,19 @@ header .site-nav .about-link {
   margin-left: 35px;
   margin-bottom: 5px; }
 
+.jp-time-holder, .jp-controls {
+  display: inline-block; }
+
+.jp-controls {
+  float: left; }
+  @media screen and (max-width: 480px) {
+    .jp-controls {
+      float: none; } }
+
 .jp-current-time {
   display: none; }
 
 .jp-duration {
-  float: right;
   padding: 10px 30px;
   font-size: 20px;
   font-weight: 400; }
