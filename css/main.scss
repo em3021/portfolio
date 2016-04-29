@@ -317,6 +317,7 @@ position: fixed;
     top: 0;
     background: #F4EEEF;
     z-index: 1;
+    border-top: 3px solid #9E6774;
     transition: all .15s ease-in-out;
     @include media-query($on-palm) {
       position: fixed;

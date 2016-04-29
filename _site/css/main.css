@@ -785,6 +785,7 @@ header .site-nav .about-link {
   top: 0;
   background: #F4EEEF;
   z-index: 1;
+  border-top: 3px solid #9E6774;
   transition: all .15s ease-in-out; }
   @media screen and (max-width: 480px) {
     .jp-gui {
