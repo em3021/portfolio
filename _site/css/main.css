@@ -773,7 +773,8 @@ header .site-nav .about-link {
 .jp-progress {
   width: 100%;
   height: 10px;
-  background: #B3AFAF; }
+  background: #B3AFAF;
+  cursor: pointer; }
 
 .jp-play-bar {
   background-color: #440514;
@@ -781,7 +782,7 @@ header .site-nav .about-link {
 
 .jp-gui {
   position: fixed;
-  right: 25%;
+  right: 10%;
   top: 0;
   background: #F4EEEF;
   z-index: 1;
