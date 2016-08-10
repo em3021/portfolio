@@ -13,9 +13,17 @@ $(document).ready(function(){
     cssSelectorAncestor: "#jp_container_1"
   }, [
     {
+      title:"Born In Custody, A Girl Finds Answers With Someone Who Knows Best: Mom",
+      mp3:"/portfolio/assets/audio/20160805_me_born_in_custody_a_girl_finds_answers_with_someone_who_knows_best_mom.mp3",
+      ogg:"/portfolio/assets/audio/20160805_me_born_in_custody_a_girl_finds_answers_with_someone_who_knows_best_mom.ogg",
+      intro:'“Savannah Phelan, 8, recently discovered a video that revealed her mother had been in jail — all while still pregnant with her. So, well-equipped with questions, she took her mom to StoryCorps.”',
+      link:"http://www.npr.org/2016/08/05/488570379/born-in-custody-a-girl-finds-answers-with-someone-who-knows-best-mom",
+      dek:"I contributed to the production of this piece by pitching this story, facilitating this interview and co-producing the piece. I then went through several stages of editing the piece with senior producer, Jasmyn Belcher Morris, and collaborated in choosing the music and mixing the piece."
+    },
+    {
       title:" &#8216;I Can Smell The Dirt And The Fear&#8217;: Up From Soil, The Soul Of A Law Career",
       mp3:"/portfolio/assets/audio/20160422_me_i_can_smell_the_dirt_and_the_fear_up_from_soil_the_soul_of_a_law_career.mp3",
-      ogg:"/portfolio/assets/audio/20160422_me_i_can_smell_the_dirt_and_the_fear_up_from_soil_the_soul_of_a_law_career_01.ogg",
+      ogg:"/portfolio/assets/audio/20160422_me_i_can_smell_the_dirt_and_the_fear_up_from_soil_the_soul_of_a_law_career.ogg",
       intro:'“Vito de la Cruz grew up in a family of migrant farm workers in the 1960s. And, though the civil rights lawyer is now far from those fields, he\'s still motivated by the memory of a brutal day.”',
       link:"http://www.npr.org/2016/04/22/475130720/i-can-smell-the-dirt-and-the-fear-up-from-soil-the-soul-of-a-law-career",
       dek:"I contributed to the production of this piece by creating the first edit of the original 40-minute interview using Pro Tools. I then went through several stages of editing the piece with our executive producer, Michael Garofalo, until it was approved by StoryCorps founder, Dave Isay, and editors at NPR\'s Morning Edition. Lastly, I chose the music and mixed the piece. "
