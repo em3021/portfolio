@@ -12,6 +12,22 @@ $(document).ready(function(){
     jPlayer: "#jquery_jplayer_1",
     cssSelectorAncestor: "#jp_container_1"
   }, [
+      {
+      title:"After Loss In Afghanistan, Vivid Memories Of A Loving, 'Goofball' Father And Husband",
+      mp3:"/portfolio/assets/audio/20160903_wesat_after_loss_in_afghanistan_vivid_memories_of_a_loving_goofball_father_and_husband.mp3",
+      ogg:"/portfolio/assets/audio/20160903_wesat_after_loss_in_afghanistan_vivid_memories_of_a_loving_goofball_father_and_husband.ogg",
+      intro:'“In this installment of StoryCorps\' Military Voices Initiative, Jenna Henderson remembers her late husband, Army Sgt. First Class Chris Henderson, who was killed in Afghanistan in 2007.”',
+      link:"http://www.npr.org/2016/09/03/492508994/after-loss-in-afghanistan-vivid-memories-of-a-loving-goofball-father-and-husband",
+      dek:"I contributed to the production of this piece by creating the first edit of the original 40-minute interview using Pro Tools. I then went through several stages of editing the piece with our executive producer, Michael Garofalo, until it was approved by StoryCorps founder, Dave Isay, and editors at NPR\'s Morning Edition. Lastly, I chose the music and mixed the piece."
+    },
+      {
+      title:"A Lightbulb Moment: All Her Practice Added Up To Triumph",
+      mp3:"/portfolio/assets/audio/20160916_me_a_lightbulb_moment_all_her_practice_added_up_to_triumph.mp3",
+      ogg:"/portfolio/assets/audio/20160916_me_a_lightbulb_moment_all_her_practice_added_up_to_triumph.ogg",
+      intro:'“Eileen Kushner strove — and strove, and strove — to overcome a learning disability diagnosed later in her life. But Kushner, who was inspired by Edison, found a crucible in her job at McDonald\'s.”',
+      link:"http://www.npr.org/2016/09/16/494070031/a-lightbulb-moment-all-her-practice-added-up-to-triumph",
+      dek:"I contributed to the production of this piece by creating an edit of the original 40-minute interview using Pro Tools. I then went through several stages of editing the piece with our executive producer, Michael Garofalo, until it was approved by StoryCorps founder, Dave Isay, and editors at NPR\'s Morning Edition. Lastly, I chose the music and mixed the piece."
+    },
     {
       title:"Born In Custody, A Girl Finds Answers With Someone Who Knows Best: Mom",
       mp3:"/portfolio/assets/audio/20160805_me_born_in_custody_a_girl_finds_answers_with_someone_who_knows_best_mom.mp3",
@@ -26,7 +42,7 @@ $(document).ready(function(){
       ogg:"/portfolio/assets/audio/20160422_me_i_can_smell_the_dirt_and_the_fear_up_from_soil_the_soul_of_a_law_career.ogg",
       intro:'“Vito de la Cruz grew up in a family of migrant farm workers in the 1960s. And, though the civil rights lawyer is now far from those fields, he\'s still motivated by the memory of a brutal day.”',
       link:"http://www.npr.org/2016/04/22/475130720/i-can-smell-the-dirt-and-the-fear-up-from-soil-the-soul-of-a-law-career",
-      dek:"I contributed to the production of this piece by creating the first edit of the original 40-minute interview using Pro Tools. I then went through several stages of editing the piece with our executive producer, Michael Garofalo, until it was approved by StoryCorps founder, Dave Isay, and editors at NPR\'s Morning Edition. Lastly, I chose the music and mixed the piece. "
+      dek:"I contributed to the production of this piece by creating the first edit of the original 40-minute interview using Pro Tools. I then went through several stages of editing the piece with our executive producer, Michael Garofalo, until it was approved by StoryCorps founder, Dave Isay, and editors at NPR\'s Morning Edition. Lastly, I chose the music and mixed the piece."
     },
     {
       title:"&#8216;I&#8217;m So Proud To Have You As A Daughter&#8217;",
