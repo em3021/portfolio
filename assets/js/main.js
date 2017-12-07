@@ -12,6 +12,31 @@ $(document).ready(function(){
     jPlayer: "#jquery_jplayer_1",
     cssSelectorAncestor: "#jp_container_1"
   }, [
+
+  {
+      title:"When A Somali-American Woman Was Attacked, Support Came From An Unlikely Source",
+      mp3:"/portfolio/assets/audio/20170721_me_when_a_somali-american_woman_was_attacked_support_came_from_an_unlikely_source.mp3",
+      ogg:"/portfolio/assets/audio/20170721_me_when_a_somali-american_woman_was_attacked_support_came_from_an_unlikely_source.ogg",
+      intro:'“Asma Jama was struck in the face with a glass mug after speaking Swahili in a restaurant in Minnesota. After the trial ended and the attacker pleaded guilty, the attacker\'s sister reached out to Jama.',
+      link:"https://www.npr.org/2017/07/21/538295334/when-a-somali-american-woman-was-attacked-support-came-from-an-unlikely-source",
+      dek:"I pitched, booked, recorded and produced this piece."
+    },
+    {
+      title:"This Country Music Tailor Is Known As 'The Rhinestone Rembrandt'",
+      mp3:"/portfolio/assets/audio/20170331_me_this_country_music_tailor_is_known_as_the_rhinestone_rembrandt.mp3",
+      ogg:"/portfolio/assets/audio/20170331_me_this_country_music_tailor_is_known_as_the_rhinestone_rembrandt.ogg",
+      intro:'“Manuel Cuevas of Manuel Couture crafted iconic outfits for Hank Williams and Gram Parsons, and turned Johnny Cash into \"the Man in Black.\"',
+      link:"https://www.npr.org/2017/03/31/522049216/this-country-music-tailor-is-known-as-the-rhinestone-rembrandt",
+      dek:"I pitched, booked, recorded and produced this piece."
+    },
+    {
+      title:"A Grandson And Daughter Recall The Legacy Of An 'Actual Superhero'",
+      mp3:"/portfolio/assets/audio/20170310_me_a_grandson_and_daughter_recall_the_legacy_of_an_actual_superhero.mp3",
+      ogg:"/portfolio/assets/audio/20170310_me_a_grandson_and_daughter_recall_the_legacy_of_an_actual_superhero.ogg",
+      intro:'"Camaran Henson remembers his late grandpa as larger than life. He "could probably fly," Camaran tells his mother at StoryCorps. The legacy her son leaves, she says, is the one that honors his grandpa."',
+      link:"https://www.npr.org/2017/03/10/519447787/a-grandson-and-daughter-recall-the-legacy-of-an-actual-superhero",
+      dek:"I pitched, booked, recorded and produced this piece."
+    },
       {
       title:"After Loss In Afghanistan, Vivid Memories Of A Loving, 'Goofball' Father And Husband",
       mp3:"/portfolio/assets/audio/20160903_wesat_after_loss_in_afghanistan_vivid_memories_of_a_loving_goofball_father_and_husband.mp3",

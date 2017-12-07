@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emily M.</title>
-    <description>This site was built with Jekyll. 
+    <description>This site was built by me with Jekyll. 
 </description>
     <link>http://em3021.github.io/portfolio/</link>
     <atom:link href="http://em3021.github.io/portfolio/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Nov 2016 22:46:19 -0500</pubDate>
-    <lastBuildDate>Tue, 15 Nov 2016 22:46:19 -0500</lastBuildDate>
+    <pubDate>Wed, 06 Dec 2017 23:27:20 -0500</pubDate>
+    <lastBuildDate>Wed, 06 Dec 2017 23:27:20 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
